@@ -1,0 +1,29 @@
+html, body{
+	margin: 0;
+	height: 100%;
+}
+.drag-main-area{
+	height: 100%;
+}
+.drag-dragged-area{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 450px;
+	min-width: 420px;
+}
+#dragBar{
+	position: absolute;
+	height: 100%;
+	width: 5px;
+	top: 0;
+	left: 0;
+	background: rgba(52,52,52,.6);
+	cursor: col-resize;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+	border: 1px solid transparent;
+}

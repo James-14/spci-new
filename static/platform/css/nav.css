@@ -1,0 +1,276 @@
+/* CSS规范 */
+/**
+	属性声明顺序：
+	1. Position			位置（absolute），层级 ( z-index )
+	2. Box model		display , float , 宽高
+	3. Typographic		字体大小（14px），字体格式（Roman），字体高度（line-height），颜色，对齐方式（left）
+	4. Visual				背景色，边框色，边框弯曲度
+	5. Misc					opacity..
+
+**/
+/** 
+	Grid 分辨率
+	col-lg: 	  >= 1200px
+	col-md:   >= 998px
+	col-sm:   >= 768px
+	col-xs:    < 768px
+**/
+
+html {
+	height: 100%;
+}
+body {
+	border-top:1px solid #fff;
+	border-bottom:1px solid #000;
+	padding-bottom:75px;
+	min-height:100%;
+	position:relative
+}
+a {
+	font-family: "Microsoft Yahei","arial","Times New Roman";
+}
+
+/* 导航栏背景色 */
+#top {
+	background: #fff;
+	opacity: .9;
+}
+
+/** 不限死logo图标高度 **/
+#logo {
+	height: auto!important;
+}
+
+#leftNav  a {
+	line-height: 35px;
+	font-size: 16px;
+	font-weight: normal!important;
+	transition: .2s linear;
+}
+
+/* hover菜单底部特效 */
+.mainNav > a:after {
+	position: absolute;
+	top: 97%;
+	left: 45%;
+	visibility: hidden;
+	width: 10px;
+	height: 2px;
+	background: #1862a7;
+	transition: .3s linear;
+	content: "";
+}
+.mainNav > a:hover:after {
+	visibility: visible;
+	left: 0;
+	width: 100%;
+}
+
+#head:after {
+	display: none!important;
+}
+
+.mainNav > a:hover {
+	color: #1862a7!important;
+}
+
+#head > img {
+	width: 35px;
+	height: 35px;
+}
+
+/* 用户名和角色 */
+#curName {
+	position: absolute;
+	left: 102%;
+	top: 50%;
+	padding: 0px;
+	transform: translateY(-50%);
+	white-space: nowrap;
+	list-style-type: none;
+}
+
+.dropdown-menu > li > a:hover {
+	background: #1862a7!important;
+	color: #fff!important;
+}
+
+.navbar-toggle {
+	position: relative;
+	top: 8px;
+}
+
+/* 消息数量 */
+#myMsg {
+	position: relative;
+	left: 30px;
+	background: rgb(201,48,32);	
+}
+
+@media (min-width:1200px) {
+	
+	/* nav中内容父容器 */
+	#top-container {
+		width: 1170px;
+	}
+	
+	/*  用户下拉菜单三角形 */  
+	/*  三角形本体 */  
+	#userDrop::before  {
+		position: absolute;
+    	transform: rotate(45deg) translateX(17%);
+    	top: -5px;
+    	right: 18%;
+   		display: inline-block;
+   		border-right: 10px solid transparent;
+    	border-top: 10px solid #fff;
+    	border-bottom: 10px solid transparent;
+    	z-index:802;
+    	content: ''
+	}
+	/*  阴影 */  
+	#userDrop::after  {
+		position: absolute;
+    	transform: rotate(45deg) translateX(17%);
+    	top: -8px;
+    	right: 18%;
+    	display: inline-block;
+    	border-right: 11px solid transparent;
+    	border-top: 11px solid rgba(0, 0, 0, .15);
+    	border-bottom: 11px solid transparent;
+   		z-index: 800;
+    	content: ''
+	}
+	
+}
+
+@media (min-width:998px) and (max-width:1199px) {
+	
+	#top-container {
+		width: 1000px;
+	}
+	
+}
+
+@media (min-width:768px) and (max-width:997px) {
+	
+	#top-container {
+		width: 100%;
+	}
+	
+}
+
+@media (max-width:767px) {
+	
+	#curName {
+		display: none;
+	}
+	
+	#userDrop::before  {
+		display: none;
+	}
+	
+	#userDrop::after  {
+		display: none;
+	}
+	
+	.mainNav > a:after {
+		display: none;
+	}
+	
+}
+
+/* 划过显示菜单 */
+.dropdown-menu{transition:.2s all ease}
+.dropdown:hover .dropdown-menu{display:block}
+
+/* 右侧滑栏 */
+.rightFm{display:none;max-width:800px;min-width:400px;margin-top:68px;height:calc(100% - 68px);border:1px solid transparent;right:-100%;background:#f6f8f7;white-space:normal;position: fixed;z-index: 3800}
+#btnBar{position: absolute;top:0;width:100%;background: #fff}
+.clsFm{right:0%;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.12),0px 8px 8px 0px rgba(0,0,0,0.24)}
+.rightFm iframe{resize: both;width: 100%;height: 100%;border: 1px solid transparent}
+#closeFmBtn{position:absolute;top:6px;right:30px;font-size: 24px;transition:.3s ease}
+#resizeFmBtn{position:absolute;top:30px;right:60px;transition:.3s ease;width: 12px;height: 12px;border: 2px solid #000}
+.smItBtn{height: 1px!important;top:22px!important;border-width:1px!important}
+#closeFmBtn:hover{cursor:pointer;transform:scale(1.7);color: #ff1b2f}
+ #resizeFmBtn:hover{cursor:pointer;transform:scale(1.7)}
+.fullFm{width: 100%!important;top:0;left:0!important} 
+#dragBar{position: absolute;top:10px;height:100%;width: 10px;background: transparent;cursor: col-resize}
+
+/* footer底部 */
+.blank{background: #fff;height: 50px;clear: both}
+.w1f{text-align: center;background: #212121;padding: 16px;clear: both;width:100%;position: absolute!important;left:0!important;bottom: 0!important;z-index: -1}
+.w2f{font-size: 14px;font-family: Microsoft Yahei;color:#999999;margin:0}
+
+.brance-line {
+    padding: 10px 40px;
+}
+.brance-line .r-icon {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin: 0 8px;
+    background: url(../../images/comm/arrow-right.png);
+}
+
+
+body {
+	background: #ddd;
+}
+a {
+	font-family: "Microsoft Yahei","arial","Times New Roman";
+}
+    
+/*  用户下拉菜单三角形 */
+#userDrop::before  {
+	position: absolute;
+    transform: rotate(45deg) translateX(17%);
+    top: -5px;
+    right: 18%;
+   	display: inline-block;
+   	border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    z-index:802;
+    content: ''
+}
+/*  阴影 */  
+#userDrop::after  {
+	position: absolute;
+    transform: rotate(45deg) translateX(17%);
+    top: -8px;
+    right: 18%;
+    display: inline-block;
+    border-right: 11px solid transparent;
+    border-top: 11px solid rgba(0, 0, 0, .15);
+    border-bottom: 11px solid transparent;
+   	z-index: 800;
+    content: ''
+}
+        
+/* 右下侧菜单 */    
+#contactGroupBox{z-index:4000;position:fixed;right:0;bottom:100px}
+#dialogBox{display:none;position:relative;padding:18px;box-shadow:0 0 10px #bbb;border-radius:5px;position: absolute;right:130%;background: #fff;width: 320px;height:200px}
+#dialogBox ul{position: absolute;top:50%;transform:translateY(-55%)}
+.diaText{display: inline-block;color: #aaa;position: relative;top:10px;left: 6px}
+#dialogBox li{border: 1px solid transparent;transition:border .3s ease;padding-bottom: 3px}
+#dialogBox li:hover{border-bottom: 1px solid #000}
+.diaText  b{color: #000;font-weight: normal!important}
+#contactGroupBox ul{padding:0;list-style-type: none}
+#contactBtnGroup li{width: 44px;height: 44px;line-height: 44px;text-align: center;background: #bec7d2;cursor: pointer;}
+#contactBtnGroup li:not(:last-child){border-bottom:1px solid #fff}
+#closeDia{color:#aaa;font-size: 22px;position: absolute;top:0px;right: 10px;cursor: pointer;transition:transform .2s  ease}
+#closeDia:hover{transform:scale(1.7)}
+    
+/* 右侧滑栏 */    
+.rightFm{display:none;max-width:800px;min-width:400px;margin-top:68px;height:calc(100% - 68px);border:1px solid transparent;right:-100%;background:#f6f8f7;white-space:normal;position: fixed;z-index: 3800}
+#btnBar{position: absolute;top:0;width:100%;background: #fff}
+.clsFm{right:0%;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.12),0px 8px 8px 0px rgba(0,0,0,0.24)}
+.rightFm iframe{resize: both;width: 100%;height: 100%;border: 1px solid transparent}
+#closeFmBtn{position:absolute;top:6px;right:30px;font-size: 24px;transition:.3s ease}
+#resizeFmBtn{position:absolute;top:30px;right:60px;transition:.3s ease;width: 12px;height: 12px;border: 2px solid #000}
+.smItBtn{height: 1px!important;top:22px!important;border-width:1px!important}
+#closeFmBtn:hover{cursor:pointer;transform:scale(1.7);color: #ff1b2f}
+ #resizeFmBtn:hover{cursor:pointer;transform:scale(1.7)}
+.fullFm{width: 100%!important;top:0;left:0!important} 
+#dragBar{position: absolute;top:10px;height:100%;width: 10px;background: transparent;cursor: col-resize}

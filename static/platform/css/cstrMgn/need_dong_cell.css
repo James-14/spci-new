@@ -1,0 +1,11 @@
+body{background: #f1f1f1!important}
+    .boxs{box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);border-radius:2px}
+    .box{box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);border-radius:2px}
+ 	.span_pass,.span_noPass,.span_noMatch{width:18px;height:25px;line-height:25px;background:url(../../static/images/icon_recipe.png) no-repeat 1px 4px;display: -moz-inline-stack;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;font-size:0em;text-indent:-999em;text-indent:0\9;}
+	.span_noPass{background-position:1px -26px;color:#fff;cursor:hand;cursor:pointer;}
+	.span_noMatch{background-position:1px -56px;color:#fff;cursor:hand;cursor:pointer;}
+	.fixed-table-container{height: auto!important}
+ 	.fixed-table-body thead th .th-inner{height: initial!important}
+	.fixed-table-container{border:none}
+	.fixed-table-header {border-style:solid solid none solid;border-color: #ddd;border-width: 1px}
+  

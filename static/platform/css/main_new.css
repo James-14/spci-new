@@ -1,0 +1,1175 @@
+/* 项目库开始 */
+body{
+  height: auto;
+  background-color: #fff;
+}
+.project-index-top{
+  height: 48px;
+  background-color: #fff;
+  margin-top: 66px;
+  padding: 0 20px;
+}
+.project-index-top-title{
+  color: #3399cc;
+  font-weight: 700;
+  float: left;
+  padding-top: 14px;
+}
+.project-index-top-return{
+  float: right;
+  padding-top: 12px;
+}
+.project-index-top-return span{
+  display: inline-block;
+  border-radius: 5px;
+  width: 90px;
+  height: 27px;
+  border: 1px solid #c9c9c9;
+  margin-right: 10px;
+  text-align: center;
+}
+.project-index-top-return span:nth-child(2){
+  margin-right: 0px;
+}
+.project-index-top-return img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.project-index-search{
+  padding: 20px 20px;
+  background-color: #ddd;
+}
+.project-index-search-a{
+  margin-left: 20px;
+  color: #FF0000;
+  text-decoration: underline;
+}
+.project-index-search-a:hover{
+  cursor: pointer;
+  background-color: transparent;
+}
+.project-index-senior-search{
+  margin-top: 10px;
+  display: none;
+
+}
+.project-index-senior-search span{
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.project-index-senior-search input{
+  border: 1px solid #c9c9c9;
+}
+
+.project-index-senior-search select{
+  border: 1px solid #c9c9c9;
+  width: 100px;
+}
+.project-search-hide{
+  background-color: #fff;
+  padding: 0px 20px;
+  display: none;
+}
+.project-search-hide span{
+  width: 100px;
+  height: 27px;
+  display: block;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  float: right;
+  cursor: pointer;
+}
+.project-search-hide img{
+  margin-top: -3px;
+  width: 10px;
+  margin-left: 10px;
+}
+.project-content{
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.project-content ul{
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1440px) and (max-width: 1500px) {
+  .project-content ul{
+    width: 83%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
+.project-content ul li{
+  float: left;
+  margin-left: 25px;
+  margin-top:20px;
+  border: 1px solid #c9c9c9;
+}
+.project-content-item-top{
+  position: relative;
+}
+.project-content-item-top span{
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 73px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+  font-size: 14px;
+  color: white;
+}
+.span-doing{
+  background-color: #FD9940;
+}
+.span-finish{
+  background-color: #159839;
+}
+.span-suspended{
+  background-color: #fc363b;
+}
+.span-nostart{
+  background-color: #999;
+}
+.span-freeze{
+  background-color: #000;
+}
+.project-content-item-top > img{
+  width: 351px;
+  height: 234px;
+}
+.project-content-item-title{
+  padding: 10px 10px;
+}
+.project-content-item-title span:nth-child(1){
+  font-size: 18px;
+  font-weight: 700;
+}
+.project-content-item-title span:nth-child(2){
+  float: right;
+  border: 1px solid #3399cc;
+  color: #3399cc;
+  font-size: 14px;
+  text-align: center;
+  padding: 2px 2px;
+  border-radius: 3px;
+}
+.project-content-item-type{
+  padding: 0px 10px;
+}
+.project-content-item-type div{
+  margin-top: 10px;
+}
+.project-content-item-type div span{
+  padding: 3px 5px;
+  border: 1px solid #c9c9c9;
+  margin-right: 10px;
+}
+.project-content-item-footer{
+  background-color: #ddd;
+  padding: 12px 10px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.project-content-item-footer > span{
+  display: inline-block;
+}
+.project-content-item-footer span:nth-child(1){
+  width: 35%;
+  border-right: 1px solid #c9c9c9;
+}
+.project-content-item-footer span:nth-child(2){
+  width: 25%;
+  border-right: 1px solid #c9c9c9;
+  text-align: center;
+}
+.project-content-item-footer span:nth-child(3){
+  width: auto;
+  padding-left: 10px;
+}
+.project-content-item-footer img{
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+.footer-position{
+  position: static!important;
+}
+
+/* 项目模型开始 */
+.project-model-selct{
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 30px;
+}
+.project-model-container{
+  border-top: 1px solid #ddd;
+}
+.project-model-tree{
+  width: 185px;
+  background-color: #ddd;
+  padding-top: 10px;
+  height: 544px;
+  overflow: auto;
+}
+.project-model-tree-head{
+  height: 35px;
+  width: 100%;
+  line-height: 35px;
+}
+.project-model-tree-head-span{
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  cursor: pointer;
+}
+.project-model-tree-head-span-click{
+  border-bottom: 2px solid #399aca;
+  color: #399aca;
+}
+.project-model-tree-head > span:hover{
+  border-bottom: 2px solid #399aca;
+  color: #399aca;
+}
+.project-model-tree-content{
+  font-size: 14px;
+}
+.project-model-tree-content-head
+{
+  margin-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.project-model-tree-content img{
+  width: 20px;
+  margin-top: -5px;
+}
+.project-model-img-rotating{
+  transform:rotate(-90deg);
+}
+.project-model-img-rotating-fourtyfive{
+  transform:rotate(45deg);
+}
+.project-content-tree-content-ul{
+  margin-left: 30px;
+}
+.project-content-tree-content-ul-two{
+  margin-left: 40px;
+  display: none;
+}
+.project-content-tree-content-ul-two li{
+  cursor: pointer;
+}
+.project-content-tree-content-ul-content{
+  cursor: pointer;
+}
+.project-model-left{
+  float: left;
+  width: 185px;
+}
+.project-model-file{
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.project-model-file input{
+  margin-top: 8px;
+  background-color: #3399cc;
+  color: #fff;
+  width: 80%;
+}
+.project-model-middle{
+  height: 589px;
+  text-align: center;
+  width: auto;
+  border-bottom: 1px solid #ddd;
+  padding-left:185px;
+  padding-right: 185px;
+}
+.project-model-right{
+  float: right;
+  width: 185px;
+  height: 589px;
+  border: 1px solid #ddd;
+  border-top: none;
+  overflow: auto;
+  overflow-x:hidden;
+  margin-top: -589px;
+}
+.project-model-right-top{
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+}
+.project-model-right-qrcode{
+  height: 160px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.project-model-right-qrcode img{
+  width: 125px;
+  margin-top: 15px;
+}
+.project-model-right-content-title{
+  height: 35px;
+  line-height: 35px;
+  background-color: #f2f2f2;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.project-model-right-content-child{
+  padding-left: 10px;
+  padding-top: 10px;
+  display: none;
+  margin-bottom: 15px;
+}
+.project-model-right-content-child-title{
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.project-model-right-content-child-content{
+  font-size: 12px;
+}
+.project-model-right-content-child-content-font{
+  color: #1FCA6A;
+}
+.project-graphics-middle-content{
+  height: 539px;
+  overflow: auto;
+}
+.ifram-page-body{
+  border-bottom: none;
+}
+
+
+/* 项目模型结束 */
+
+/*项目图形开始*/
+.project-graphics-middle{
+  height: 589px;
+  width: auto;
+  border-bottom: 1px solid #ddd;
+  padding-left:185px;
+}
+.project-graphics-middle-top{
+  height: 50px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+.project-graphics-middle-top-opration{
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+.project-graphics-middle-table{
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 14px;
+}
+.project-graphics-middle-table th{
+  text-align: center;
+  background-color: #cccccc;
+  height: 30px;
+}
+.project-graphics-middle-table tr:nth-child(1){
+  background-color: #f2f2f2;
+}
+.project-graphics-middle-table td{
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 30px;
+}
+.project-list-middle{
+  width: auto;
+  padding-left:185px;
+}
+.project-list-search{
+  height: 63px;
+  padding-top: 19px;
+  font-size: 14px;
+}
+.project-list-search span{
+  margin-left: 20px;
+}
+.project-list-middle-content{
+  overflow: auto;
+}
+/*项目图形结束*/
+
+.project-item-div{
+  padding: 0 20px;
+}
+.project-item-frame{
+  width: 100%;
+  border: 0;
+}
+
+/* 项目文件管理 开始 */
+.project-file-manage-table-img{
+  width: 20px;
+  height: 20px;
+}
+.project-file-manage-table-th{
+  width: 60px;
+}
+.project-file-manage-table-th2{
+  width: 130px;
+}
+.project-file-manage-table-th3{
+  width: 170px;
+}
+.project-file-page{
+    text-align: center;
+    font-size: 12px;
+}
+/* 项目文件管理 结束 */
+
+/* 项目文件详情 开始 */
+.project-file-main{
+    padding: 0 20px;
+    margin-bottom: 70px;
+}
+.project-file-messeage{
+    padding-right: 308px;
+    height: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.project-file-messeage iframe{
+    height: 800px;
+}
+.project-file-right{
+   float: right;
+    height: 820px;
+    margin-top: -800px;
+    width: 280px;
+    border-left: 1px solid #ddd;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.project-file-right-top{
+    height: 65px;
+}
+.project-file-right-top img{
+    float: left;
+    width: 57px;
+    height: 57px;
+    margin-top: -3px;
+}
+.project-file-right-top-text{
+    float: left;
+    margin-left: 10px;
+}
+.project-file-right-top-text p:nth-child(1){
+    font-weight: 700;
+}
+.project-file-right-top-text p:nth-child(2){
+    font-size: 14px;
+}
+.project-file-right-main-text{
+    margin-top: 20px;
+}
+.project-file-right-main-text > p{
+    margin-top: 20px;
+}
+/* 项目文件详情 结束 */
+
+/* 构件库 开始 */
+
+.artifacts-top-sapn{
+    font-size: 16px;
+    display: inline-block;
+    height: 35px;
+    width: 90px;
+    text-align: center;
+    color: #666666;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+.artifacts-top-sapn-select{
+    color: #3399CC;
+    font-weight: 700;
+    border-bottom: 1px solid #3399cc;
+}
+.artifacts-library-search{
+    padding: 15px 20px;
+    background-color: #f2f2f2;
+}
+.artifacts-library-search-keyword{
+    float: left;
+    font-size: 14px;
+}
+.artifacts-library-search-row{
+    margin-top: 15px;
+}
+.artifacts-library-search-upload{
+    float: right;
+    background-color: #3399cc;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius:24px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.artifacts-library-search-upload img{
+    width: 26px;
+    height: 26px;
+}
+.artifacts-library-content{
+    padding: 20px 20px;
+}
+.artifacts-library-content-li{
+    border: 1px solid #ddd;
+    width: 118px;
+    height: 118px;
+    position: relative;
+    float: left;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+.artifacts-library-content-li-top{
+    overflow: hidden;
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+}
+.artifacts-library-content-li-top img{
+    overflow: hidden;
+    max-width:90px;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.artifacts-library-content-li-top-text{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+.artifacts-library-content-li-top-layer{
+    position: absolute;
+    top: 85px;
+    background-color: #575757;
+    width: 100%;
+    height: 31px;
+    padding-top: 2px;
+    opacity:0.8;
+    display: none;
+}
+.artifacts-library-content-li-top-layer-leftimg{
+    float: left;
+    margin-left: 10px;
+}
+.artifacts-library-content-li-top-layer-midimg img,
+.artifacts-library-content-li-top-layer-leftimg img{
+    width: 24px;
+    height: 20px;
+}
+.artifacts-library-content-li-top-layer-rightimg img{
+    width: 24px;
+    height: 21px;
+}
+.artifacts-library-content-li-top-layer-rightimg{
+    float: right;
+    margin-right: 10px;
+}
+.artifacts-library-content-li-top-layer-midimg{
+  float: left;
+  margin-left: 16px;
+}
+.artifacts-my-content-li-top-layer-leftimg{
+    float: left;
+    margin-left: 10px;
+}
+.artifacts-my-content-li-top-layer-midimg{
+  float: left;
+  margin-left: 16px;
+}
+.artifacts-my-content-li-top-layer-rightimg{
+  float: right;
+  margin-right: 10px;
+}
+.artifacts-my-content-li-top-layer-midimg img,
+.artifacts-my-content-li-top-layer-leftimg img{
+  width: 20px;
+  height: 20px;
+}
+.artifacts-my-content-li-top-layer-rightimg img{
+  width: 24px;
+  height: 21px;
+}
+
+
+
+
+
+@media screen and (min-width: 1170px){
+    .artifacts-library-content > ul{
+        width: 1146px;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    .artifacts-library-content li:nth-child(8n+0){
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 970px) and (max-width: 1160px)  {
+    .artifacts-library-content > ul{
+        width: 860px;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    .artifacts-library-content li:nth-child(6n+0){
+        margin-right: 0px;
+    }
+}
+.artifacts-collection-layer{
+  position: absolute;
+  top: 0px;
+  background-color: #575757;
+  width: 100%;
+  height: 118px;
+  padding-top: 2px;
+  opacity:0.8;
+  display: none;
+}
+.artifacts-collection-layer-top-img{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+.artifacts-collection-layer-top-img img{
+  width: 24px;
+  height: 20px;
+}
+.artifacts-collection-layer-bottom-img{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 23px;
+}
+.artifacts-collection-layer-bottom-img img{
+  width: 25px;
+  height: 27px;
+}
+/* 构件库 结束 */
+
+/* 构件详情页开始 */
+
+.artifacts-item-right{
+  float: left;
+  width: 185px;
+  height: 662px;
+  border: 1px solid #ddd;
+  border-top: none;
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.artifacts-item-right-top{
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+  color: #3399cc;
+  font-weight: 700;
+}
+.artifacts-item-left-qrcode{
+  height: 160px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.artifacts-item-left-qrcode img{
+  width: 158px;
+}
+.artifacts-item-desp{
+  margin-top: 15px;
+  text-align: center;
+}
+.artifacts-item-desp-spanimg{
+  width: 31px;
+  height: 28px;
+  background-color: #E9f4f8;
+  display: inline-block;
+  border: 1px solid #3399cc;
+  border-radius: 3px;
+  text-align: center;
+}
+.artifacts-item-desp-spanimg img{
+  width: 18px;
+  height: 18px;
+}
+.artifacts-item-number{
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.artifacts-item-number-span{
+  display: inline-block;
+  margin-right: 15px;
+}
+.artifacts-item-number span:nth-child(3){
+  margin-right: 0px;
+}
+.artifacts-item-number-span-img1{
+  margin-top: -3px;
+  margin-right: 3px;
+}
+.artifacts-item-number-span-img2{
+  margin-top: -3px;
+  margin-right: 3px;
+}
+.artifacts-item-number-span-img3{
+  width: 15px;
+  height: 13px;
+  margin-top: -3px;
+  margin-right: 3px;
+}
+.artifacts-item-left-content-title{
+  height: 35px;
+  line-height: 35px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.artifacts-item-left-content-child{
+  padding-left: 20px;
+  display: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.artifacts-item-left-content-child-title{
+  font-weight: 700;
+  margin-top: 10px;
+}
+.artifacts-item-left-params{
+  margin-top: 15px;
+}
+.artifacts-item-left-tims-span
+{
+  margin-right: 20px;
+  display: inline-block;
+  float: right;
+  color: #3399cc;
+}
+.artifacts-item-middle{
+  height: 662px;
+  line-height: 662px;
+  text-align: center;
+  width: auto;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  background-color: #ddd;
+}
+.artifacts-item-middle img{
+  max-width: 846px;
+  vertical-align: middle;
+}
+/* 构件详情页结束 */
+
+/* 模具页开始*/
+.img-spci-select{
+  width: 106px;
+  margin-top: 5px;
+}
+.mould-item-param-span{
+  color: #3399cc;
+}
+.mould-item-type-desp{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 5px;
+  height: 20px;
+  background-color: #FD996B;
+  font-size: 12px;
+  text-align: center;
+  color: #FFF;
+}
+.mould-item-main-left-desp{
+  margin-top: 23px;
+}
+/*模具页结束*/
+/* 施工计划开始 */
+.construction-top-span{
+  font-size: 14px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  padding: 0 10px;
+  text-align: center;
+  color: #666666;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.construction-top-model-span{
+  margin-left: 20px;
+  border-right: none;
+}
+.construction-top-span-select{
+  background-color: #3399cc;
+  color: #fff;
+}
+.construction-top-return{
+  float: right;
+  padding-top: 12px;
+}
+.construction-top-return > input{
+  margin-right: 15px;
+}
+.construction-top-return span{
+  display: inline-block;
+  border-radius: 5px;
+  width: 90px;
+  height: 27px;
+  border: 1px solid #c9c9c9;
+  margin-right: 10px;
+  text-align: center;
+}
+.construction-top-return span:nth-child(2){
+  margin-right: 0px;
+}
+.construction-top-return img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.construction-mid-top{
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+}
+.construction-mid-top-firstsapn{
+  height: 30px;
+  display: inline-block;
+  margin-top: 10px;
+  border-right: 1px solid #ddd;
+  width: 40px;
+  cursor: pointer;
+}
+.construction-mid-top-othersapn{
+  height: 30px;
+  display: inline-block;
+  margin-top: 10px;
+  width: 40px;
+  border: none;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.construction-mid-gantte{
+  height: 720px;
+}
+.construction-mid-model{
+  margin-top:-720px;
+  height: 702px;
+  padding-left: 602px;
+  position: relative;
+  display: none;
+}
+.construction-mid-model-desp{
+  background-color: #ddd;
+  height: 702px;
+  line-height: 702px;
+  text-align: center;
+  overflow: hidden;
+}
+.construction-mid-model-desp img{
+  vertical-align: center;
+  max-height: 690px;
+}
+.goods-plan-main-right-mid-to{
+  height: 150px;
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.goods-plan-main-right-mid-pid{
+  height: 110px;
+}
+/* 施工计划结束 */
+
+/*要货计划开始*/
+.goods-plan-search{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.goods-plan-search input[type="text"]{
+  width: 110px;
+}
+.goods-plan-search input[type="button"]{
+  height: 30px;
+  width: 60px;
+}
+.goods-plan-search span{
+  margin-right: 10px;
+}
+.goods-plan-main-left{
+  padding-right: 270px;
+}
+.goods-plan-main-right{
+  position: absolute;
+  width: 270px;
+  height: 581px;
+  top: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  padding: 5px 0px;
+  font-size: 14px;
+}
+.goods-plan-main{
+  position: relative;
+}
+.goods-plan-main-right-top{
+  height: 117px;
+}
+.goods-plan-main-right-center{
+  font-weight: 700;
+  font-size: 18px;
+  margin: 18px 0;
+  text-align: center;
+}
+.goods-plan-main-right-bottom{
+  height: 30px;
+  line-height: 30px;
+  background-color: #f9f9f9;
+  font-size: 12px;
+  color: #666666;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+.goods-plan-main-right-bottom-left{
+  float: left;
+}
+.goods-plan-main-right-bottom-right{
+  float: right;
+}
+.goods-plan-main-right-top-title{
+  padding-left: 5px;
+}
+.goods-plan-main-right-mid{
+  padding-top: 10px;
+}
+.goods-plan-main-right-mid-column{
+  margin-top: 20px;
+}
+.goods-plan-main-right-mid-column-left{
+  width: 50%;
+  height: 300px;
+  float: left;
+  text-align: center;
+}
+.goods-plan-main-right-mid-column-right{
+  width: 50%;
+  height: 300px;
+  float: left;
+  text-align: center;
+}
+.goods-plan-charge{
+  width: 120px;
+  height: 210px;
+}
+.goods-plan-lifting{
+  width: 120px;
+  height: 210px;
+}
+/*要货计划结束*/
+
+/* 登录页面开始 */
+.login-main{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../../video/vediobg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-html-body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding:0;
+  position: relative;
+}
+.vedio{
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  margin: 0;
+  padding:0
+}
+.login-main-mid{
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 450px;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/* 登录页面结束 */
+
+
+
+
+/* 顺时针旋转90度 */
+.rotate90 {
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/*顺时针旋转180度*/
+.rotate180 {
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* 通用按钮样式 开始 */
+.btn-default{
+  background-color: #fff;
+  width: auto;
+  padding: 0 13px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.btn-default:hover{
+  background-color: #3399cc;
+  color: #fff;
+}
+.btn-default:focus{
+  background-color: #3399cc;
+  color: #fff;
+}
+.btn-spci-simple{
+    background-color: #fff;
+    width: auto;
+    padding: 0 13px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.btn-spci-simple-click{
+    background-color: #3399cc;
+    color: #fff;
+}
+
+.btn-spci-blue{
+    background-color: #3399cc;
+    color: #fff;
+    width: auto;
+    padding: 0 13px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/* 通用按钮样式 结束 */
+
+/*通用a标签样式*/
+.a-spci-blue{
+    background-color: #3399cc;
+    color: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.a-spci-blue:hover{
+    background-color: #3399cc;
+    color: #fff;
+}
+/*通用a标签结束*/
+
+
+/* 通用下拉框样式 开始 */
+.select-default{
+  height: 27px;
+}
+/* 通用下拉框样式 结束 */
+
+/* 通用输入框样式 开始 */
+.spci-input-lg{
+  width: 220px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  　　color: #666;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  　　color:#666;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  　　color:#666;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  　　color:#666;
+}
+/* 通用输入框样式 结束 */
+
+/* 通用表格样式 开始 */
+.table-spci-simple{
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 12px;
+  table-layout: fixed;
+}
+.table-spci-simple th{
+  text-align: center;
+  height: 30px;
+  border: 1px solid #ddd;
+}
+.table-spci-simple td{
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-spci-simple-wrap{
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 12px;
+  table-layout: fixed;
+}
+.table-spci-simple-wrap th{
+  text-align: center;
+  height: 30px;
+  border: 1px solid #c9c9c9;
+  background-color: #ddd;
+}
+.table-spci-simple-wrap td{
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 30px;
+}
+/* 通用表格样式 结束 */

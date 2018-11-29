@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="static/platform/css/bootstrap.css" />
+    <link rel="stylesheet" href="static/platform/css/indexMenu/index.css" />
+    <link rel="stylesheet" href="static/platform/css/common.css" />
+    <link rel="stylesheet" href="static/platform/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/platform/css/nav.css" />
+    <!--add new main css by lisong-->
+    <link rel="stylesheet" href="static/platform/css/main_new.css" />
+    <link rel="stylesheet" href="static/platform/css/communication/dcalendar.picker.css">
+    <!--end-->
+    <script src="static/platform/js/jquery-1.10.1.min.js"></script>
+    <script src="static/platform/js/bootstrap.min.js"></script>
+    <script src="static/platform/js/bootstrap-paginator.js"></script>
+    <link
+            rel="shortcut icon"
+            href="static/platform/image/Page_Logo.png"
+            type="image/x-icon"
+    />
+    <title>项目库</title>
+</head>
+<body>
+<nav
+        class="navbar navbar-default navbar-fixed-top"
+        role="navigation"
+        id="top"
+>
+    <div class="container-fluid" id="top-container">
+        <div class="navbar-header" id="leftLogo">
+            <button
+                    type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#rightNav"
+            >
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--
+              <a class="navbar-brand" href="/" id="logo"><img src="/static/platform/image/logo.png"></a>
+            -->
+            <a class="navbar-brand" href="http://127.0.0.1:8088/" id="logo"
+            ><img src="static/platform/image/loaa_1_03.png" style="width: 190px"
+            /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="rightNav">
+            <ul id="leftNav" class="nav navbar-nav navbar-right">
+                <li class="mainNav"><a href="http://127.0.0.1:8088/">首页</a></li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">项目总览</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/center.html"
+                            >项目总览</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/mgn/pandect-all"
+                            >项目地图</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/productRequest/quality"
+                            >质量分析</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">在线统计</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8088/component/build_search.html"
+                            >构件查询</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainNav">
+                    <a href="http://127.0.0.1:8088/communication/online_listen"
+                    >在线聆听</a
+                    >
+                </li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">切换角色</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=6"
+                            >项目经理</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=5"
+                            >临时</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=1"
+                            >超级管理员</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=7"
+                            >业主</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=8"
+                            >运输负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=9"
+                            >设计负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=10"
+                            >施工负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=11"
+                            >生产负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=12"
+                            >APP客户版</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=13"
+                            >APP库管角色</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">子系统入口</a>
+                    <ul class="dropdown-menu ">
+                        <li>
+                            <a
+                                    href="http://123.206.47.43:8088/dologin.do?maxAccount=yanj"
+                                    target="_blank"
+                            >工厂在线PBIS系统</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://saas.rootcloud.com/">生产装备在线CMES系统</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/waybill/wayBillStatistics"
+                            >运输在线</a
+                            >
+                        </li>
+                        <li><a href="http://127.0.0.1:8088/taji">塔机在线</a></li>
+                    </ul>
+                </li>
+                <li class="mainNav dropdown">
+                    <a
+                            href="http://127.0.0.1:8088/#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            id="head"
+                    >
+                        <img src="static/platform/image/head1.png" />
+                    </a>
+                    <ul class="dropdown-menu" id="userDrop">
+                        <li>
+                            <a href="http://127.0.0.1:8088/#"
+                            >项目经理<span id="userName">李松</span></a
+                            >
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/center.html"
+                            >我的项目</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/projectMenu"
+                            >创建项目</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    href="http://127.0.0.1:8088/project/ctl/designSchedule.html"
+                            >项目计划</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/productRequest/quality"
+                            >质量追溯</a
+                            >
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/communication/corporate_task"
+                            >我的消息<span class="badge" id="myMsg">1</span></a
+                            >
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/mgr/user_chpwd">修改密码</a>
+                        </li>
+                        <li><a href="http://127.0.0.1:8088/pt/logout">退出</a></li>
+                    </ul>
+                    <ul id="curName">
+                        <li>项目经理</li>
+                        <li>李松</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid project-index-top clearfix">
+    <div class="project-index-top-title">
+        <span>招标文件.word</span>
+    </div>
+    <div  class="project-index-top-return">
+            <span>
+                <img src="static/platform/svg/qrcode.svg">二维码
+            </span>
+        <span>
+                <img src="static/platform/svg/lefttriangle.svg">返回
+            </span>
+    </div>
+</div>
+<div class="project-file-main">
+    <div class="project-model-container clearfix">
+        <div class="project-file-messeage">
+            <iframe class="project-item-frame"  src="http://view.officeapps.live.com/op/view.aspx?src=http%3a%2f%2fvideo.ch9.ms%2fbuild%2f2011%2fslides%2fTOOL-532T_Sutter.pptx" scrolling="auto">
+            </iframe>
+        </div>
+        <div class="project-file-right">
+            <div class="project-file-right-top clearfix">
+                <img src="static/platform/img/u3347.png">
+                <div class="project-file-right-top-text">
+                    <p>水木阳光项目招标文件书</p>
+                    <p>长沙三一筑工集团</p>
+                </div>
+            </div>
+            <div class="project-file-right-main-text">
+                <p>浏览人数：123人</p>
+                <p>下载份数：56份</p>
+            </div>
+            <div class="project-file-right-main-text">
+                <a href="#" class="a-spci-blue">下载</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<footer class="w1f">
+    <p class="w2f">
+        Copyright © <span id="crtime">2012-2018</span> All Right Reserved
+    </p>
+</footer>
+
+<script>
+    var iframeHeights=new Array();
+    $(function(){
+        $("span.project-model-tree-head-span").click(function(){
+            $(this).addClass("project-model-tree-head-span-click");
+            $(this).siblings().removeClass("project-model-tree-head-span-click");
+        });
+        $(".project-model-tree-content-head").click(ulClick);
+        //二级菜单
+        $(".project-content-tree-content-ul-content").click(ulClick);
+        $(".project-model-content-tree-floor").click(function(){
+            console.log("ok");
+        });
+        $("#chall").click(function () {
+            if($(this).is(':checked'))
+            {
+                $(".ch-item").prop("checked", true);
+            }
+            else
+            {
+                $(".ch-item").prop("checked", false);
+            }
+        });
+        $('#pageLimit').bootstrapPaginator({
+            currentPage: 1,//当前的请求页面。
+            totalPages: 20,//一共多少页。
+            size:"normal",//应该是页眉的大小。
+            bootstrapMajorVersion: 3,//bootstrap的版本要求。
+            alignment:"right",
+            numberOfPages:5,//一页列出多少数据。
+            itemTexts: function (type, page, current) {//如下的代码是将页眉显示的中文显示我们自定义的中文。
+                switch (type) {
+                    case "first": return "首页";
+                    case "prev": return "上一页";
+                    case "next": return "下一页";
+                    case "last": return "末页";
+                    case "page": return page;
+                }
+            }
+        });
+    });
+
+    function checkSelect() {
+        var checkList= $('.ch-item:checked');
+        $.each(checkList, function(i, item){
+            console.log($(item).attr("label")+"-"+i);
+        });
+    }
+
+    //下拉点击事件
+    function ulClick(){
+        var firstul=$(this).siblings("ul").first();
+        var img=$(this).children("img").first();
+        if(firstul.is(":hidden")){
+            firstul.slideDown();
+            img.removeClass("project-model-img-rotating")
+        }else{
+            firstul.slideUp();
+            img.addClass("project-model-img-rotating")
+        }
+    }
+</script>
+
+</body>
+</html>

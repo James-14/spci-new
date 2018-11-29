@@ -1,0 +1,5 @@
+	.simple-gallery-item{border:1px solid transparent;padding: 2px;margin: 0}
+	.simple-gallery-item img{margin: 10px}
+	.simple-gallery-item:hover{border-color:#ccc;box-shadow: 12px 10px 20px 5px #ccc;font-weight: bold;animation-duration:2.0s;animation-fill-mode:both;
+		animation-name:pulse}
+	.design-gallery-container{padding: 0}

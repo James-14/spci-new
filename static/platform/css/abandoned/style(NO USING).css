@@ -1,0 +1,14 @@
+body{background: #eceff1}
+   a{font-family: "Microsoft Yahei"}
+    #top{background: #fff}
+    #top a{line-height: 35px}
+    #logo{padding: 16px 15px}
+    #logo img{margin-left: 5px}
+    #top-container{height: 70px}
+    #rightNav{margin-right: 20px}
+    .mainNav a{font-size: 16px;color: #333}
+    .mainNav a:hover{color:#e61c1f!important;font-weight: bold}
+    #logButton{width: 70px;height: 30px;border: 0.5px solid #e61c1f;border-radius: 15px;vertical-align: center;line-height: 28px;color: #e61c1f;background: #fff}
+    #logButton:hover{color: #fff;background: #e61c1f}
+    #logButton:focus{outline: none;color: #fff;background: #e61c1f}
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{background: #fff}

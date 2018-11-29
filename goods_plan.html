@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="static/platform/css/bootstrap.css" />
+    <link rel="stylesheet" href="static/platform/css/indexMenu/index.css" />
+    <link rel="stylesheet" href="static/platform/css/common.css" />
+    <link rel="stylesheet" href="static/platform/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/platform/css/nav.css" />
+    <!--add new main css by lisong-->
+    <link rel="stylesheet" href="static/platform/css/main_new.css" />
+    <link rel="stylesheet" href="static/platform/css/communication/dcalendar.picker.css">
+    <!--end-->
+    <script src="static/platform/js/jquery-1.10.1.min.js"></script>
+    <script src="static/platform/js/bootstrap.min.js"></script>
+    <script src="static/platform/js/communication/dcalendar.picker.js"></script>
+    <script src="static/platform/js/communication/echarts.min.js"></script>
+    <link
+            rel="shortcut icon"
+            href="static/platform/image/Page_Logo.png"
+            type="image/x-icon"
+    />
+    <title>智能施工</title>
+</head>
+<body>
+<nav
+        class="navbar navbar-default navbar-fixed-top"
+        role="navigation"
+        id="top"
+>
+    <div class="container-fluid" id="top-container">
+        <div class="navbar-header" id="leftLogo">
+            <button
+                    type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#rightNav"
+            >
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--
+              <a class="navbar-brand" href="/" id="logo"><img src="/static/platform/image/logo.png"></a>
+            -->
+            <a class="navbar-brand" href="http://127.0.0.1:8088/" id="logo"
+            ><img src="static/platform/image/loaa_1_03.png" style="width: 190px"
+            /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="rightNav">
+            <ul id="leftNav" class="nav navbar-nav navbar-right">
+                <li class="mainNav"><a href="http://127.0.0.1:8088/">首页</a></li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">项目总览</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/center.html"
+                            >项目总览</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/mgn/pandect-all"
+                            >项目地图</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/productRequest/quality"
+                            >质量分析</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">在线统计</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8088/component/build_search.html"
+                            >构件查询</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainNav">
+                    <a href="http://127.0.0.1:8088/communication/online_listen"
+                    >在线聆听</a
+                    >
+                </li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">切换角色</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=6"
+                            >项目经理</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=5"
+                            >临时</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=1"
+                            >超级管理员</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=7"
+                            >业主</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=8"
+                            >运输负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=9"
+                            >设计负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=10"
+                            >施工负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=11"
+                            >生产负责人</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=12"
+                            >APP客户版</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/pt/changeRole?roleId=13"
+                            >APP库管角色</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainNav dropdown">
+                    <a href="http://127.0.0.1:8088/#">子系统入口</a>
+                    <ul class="dropdown-menu ">
+                        <li>
+                            <a
+                                    href="http://123.206.47.43:8088/dologin.do?maxAccount=yanj"
+                                    target="_blank"
+                            >工厂在线PBIS系统</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://saas.rootcloud.com/">生产装备在线CMES系统</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/waybill/wayBillStatistics"
+                            >运输在线</a
+                            >
+                        </li>
+                        <li><a href="http://127.0.0.1:8088/taji">塔机在线</a></li>
+                    </ul>
+                </li>
+                <li class="mainNav dropdown">
+                    <a
+                            href="http://127.0.0.1:8088/#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            id="head"
+                    >
+                        <img src="static/platform/image/head1.png" />
+                    </a>
+                    <ul class="dropdown-menu" id="userDrop">
+                        <li>
+                            <a href="http://127.0.0.1:8088/#"
+                            >项目经理<span id="userName">李松</span></a
+                            >
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/center.html"
+                            >我的项目</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/project/projectMenu"
+                            >创建项目</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    href="http://127.0.0.1:8088/project/ctl/designSchedule.html"
+                            >项目计划</a
+                            >
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/productRequest/quality"
+                            >质量追溯</a
+                            >
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/communication/corporate_task"
+                            >我的消息<span class="badge" id="myMsg">1</span></a
+                            >
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8088/mgr/user_chpwd">修改密码</a>
+                        </li>
+                        <li><a href="http://127.0.0.1:8088/pt/logout">退出</a></li>
+                    </ul>
+                    <ul id="curName">
+                        <li>项目经理</li>
+                        <li>李松</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid project-index-top clearfix">
+    <div class="project-index-top-title">
+        <span>要货计划</span>
+    </div>
+    <div  class="construction-top-return">
+        <span>
+                <img src="static/platform/svg/qrcode.svg">二维码
+            </span>
+        <span>
+                <img src="static/platform/svg/lefttriangle.svg">返回
+            </span>
+    </div>
+</div>
+<div class="container-fluid goods-plan-search">
+    <form>
+        <span>
+            <label>选择项目：</label>
+             <select class="select-default">
+                  <option value="0" selected>马来西亚项目</option>
+                  <option value="1">深圳项目</option>
+                </select>
+        </span>
+        <span>
+            <label>楼号：</label>
+             <input type="text">
+        </span>
+        <span>
+            <label>层号：</label>
+             <input type="text">
+        </span>
+        <span>
+            <label>构件状态：</label>
+             <select class="select-default">
+                  <option value="0" selected>已生产</option>
+                  <option value="1">未生产</option>
+                 <option value="2">正在生产</option>
+                </select>
+        </span>
+        <span>
+                <label>要货时间：</label>
+                <input id="startDate" type="text" name="finishTime" id="startDate"/>&nbsp;-&nbsp;<input id="endDate" type="text" name="finishTime" id="endDate"/>
+        </span>
+        <span>
+            <input type="button" class="btn-spci-blue" value="导出">
+        </span>
+    </form>
+</div>
+<div class="container-fluid construction-mid-top">
+<span class="construction-mid-top-firstsapn">
+    <img src="static/platform/img/replay_u5999.png">
+</span>
+    <span class="construction-mid-top-othersapn">
+    <img src="static/platform/img/u6314.png">
+</span>
+    <span class="construction-mid-top-othersapn">
+    <img src="static/platform/img/u6315.png">
+</span>
+</div>
+<div class="goods-plan-main">
+    <div class="goods-plan-main-left">
+        <table class="table-spci-simple-wrap">
+            <thead>
+            <tr>
+                <th class="project-file-manage-table-th">
+                    <input type="checkbox" id="chall">
+                </th>
+                <th>
+                    FRID号
+                </th>
+                <th>
+                    构件图号
+                </th>
+                <th>
+                    工程名称
+                </th>
+                <th>
+                    栋号
+                </th>
+                <th >
+                    层号
+                </th>
+                <th >
+                    方量
+                </th>
+                <th>
+                    状态
+                </th>
+                <th>
+                    要货时间
+                </th>
+                <th>
+                    调整后要货时间
+                </th>
+                <th>
+                    事假要货时间
+                </th>
+                <th>
+                    送货单号
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ch-item" type="checkbox" label="test1">
+                </td>
+                <td>
+                    2018010011
+                </td>
+                <td>
+                    1001-42
+                </td>
+                <td>
+                    马来西亚来登项目
+                </td>
+                <td>
+                    20185-1-10
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    0.81
+                </td>
+                <td>
+                    签收完成
+                </td>
+                <td>
+                    2017-2-12
+                </td>
+                <td>
+                    2018-1-1
+                </td>
+                <td>
+                    2018-12-20 8:00
+                </td>
+                <td>
+                    ddh10023
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="goods-plan-main-right">
+        <div class="goods-plan-main-right-top">
+            <div class="goods-plan-main-right-top-title">
+                当前在途车辆
+            </div>
+            <div class="goods-plan-main-right-center">
+                2辆
+            </div>
+            <div class="goods-plan-main-right-bottom clearfix">
+                <div class="goods-plan-main-right-bottom-left">
+                    数量：6个
+                </div>
+                <div class="goods-plan-main-right-bottom-right">
+                    重量：3.2吨
+                </div>
+            </div>
+        </div>
+        <div class="goods-plan-main-right-mid">
+            <div class="goods-plan-main-right-top-title">
+                到货统计图
+            </div>
+            <div class="goods-plan-main-right-mid-to" >
+                <div id="goods-plan-pie" class="goods-plan-main-right-mid-pid">
+                </div>
+            </div>
+        </div>
+        <div class="goods-plan-main-right-mid">
+            <div class="goods-plan-main-right-top-title">
+                要货实施情况
+            </div>
+            <div class="clearfix goods-plan-main-right-mid-column">
+                <div class="goods-plan-main-right-mid-column-left">
+                    <div id="goods-plan-charge" class="goods-plan-charge">
+                    </div>
+                </div>
+                <div class="goods-plan-main-right-mid-column-right">
+                    <div id="goods-plan-lifting" class="goods-plan-lifting">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="w1f">
+    <p class="w2f">
+        Copyright © <span id="crtime">2012-2018</span> All Right Reserved
+    </p>
+</footer>
+
+<script>
+    $(function(){
+        $('#startDate').dcalendarpicker({
+            format:'yyyy-mm-dd'
+        });
+        $('#endDate').dcalendarpicker({
+            format:'yyyy-mm-dd'
+        });
+        $("#chall").click(function () {
+            if($(this).is(':checked'))
+            {
+                $(".ch-item").prop("checked", true);
+            }
+            else
+            {
+                $(".ch-item").prop("checked", false);
+            }
+        });
+        drawPie();
+        drawCharge();
+        drawlifting();
+    });
+
+    function checkSelect() {
+        var checkList= $('.ch-item:checked');
+        $.each(checkList, function(i, item){
+            console.log($(item).attr("label")+"-"+i);
+        });
+    }
+    //画饼图
+    function drawPie() {
+        var dom = document.getElementById("goods-plan-pie");
+        var myChart = echarts.init(dom);
+        var option = null;
+
+        option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            graphic:{
+                type:'text',
+                left:'center',
+                top:'center',
+                style:{
+                    text:'进度',
+                    textAlign:'center',
+                    fill:'#000',
+                    width:30,
+                    height:30
+                }
+            },
+            series: [
+                {
+                    name:'到货统计',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '12',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: true,
+                            length: 5,
+                            length2: 5,
+                            lineStyle: {
+                                //color: '#12EABE',
+                                width: 1
+                            }
+                        }
+                    },
+                    label: {
+                        normal: {
+                            // formatter: '{c|{b}}\n{d|{d}%}',
+                            formatter: '{c|{b}}',
+                            rich: {
+                                b: {
+                                    fontSize: 12,
+                                    color: '#12EABE',
+                                    align: 'left',
+                                    padding: 4
+                                },
+                                d: {
+                                    fontSize: 12,
+                                    align: 'left',
+                                    padding: 2
+                                },
+                                c: {
+                                    color: '#333',
+                                    fontSize: 12,
+                                    align: 'left',
+                                    padding: 2
+                                }
+                            }
+                        }
+                    },
+                    data:[
+                        {value:335, name:'已到场'},
+                        {value:200, name:'已安装'},
+                        {value:150, name:'运输中'},
+                        {value:50, name:'未发货'}
+                        ]
+                }
+            ]
+        };
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    }
+    
+    //画收货统计图
+    function drawCharge() {
+        var dom1 = document.getElementById("goods-plan-charge");
+        var myChart1 = echarts.init(dom1);
+        var option1 = null;
+
+        option1={
+          title:{
+              text:"收货统计",
+              left:'center',
+              textStyle:{
+                  //文字颜色
+                  //字体风格,'normal','italic','oblique'
+                  fontStyle:'normal',
+                  //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+                  fontWeight:'bold',
+                  //字体大小
+                  fontSize:14
+              }
+          },
+          tooltip: {
+              trigger: 'axis',
+              axisPointer:{
+                  type:'shadow'
+              }
+          },
+          grid:{
+              left: '3%',
+              right: '4%',
+              bottom: '3%',
+              top:'15%',
+              containLabel: true
+          },
+          yAxis:{
+             type:'value',
+             //boundaryGap:[0, 0.01],
+             //  axisLabel:{
+             //      formatter:'{value}(t)'
+             //  },
+              show:false,
+          },
+          xAxis:{
+              type:'category',
+              data:['计划','实际']
+          },
+            series: [
+                {
+                    name:'计划',
+                    type:'bar',
+                    data:[15.26,3.02],
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'top',
+                            formatter:'{c}(t)'
+                        }
+                    },
+                    barWidth:20,
+                    itemStyle: {
+                        normal: {
+                            // 随机显示
+                            //color:function(d){return "#"+Math.floor(Math.random()*(256*256*256-1)).toString(16);}
+
+                            // 定制显示（按顺序）
+                            color: function(params) {
+                                var colorList = ['#64BD3D','#EE9201','#29AAE3', '#B74AE5','#0AAF9F','#E89589','#16A085','#4A235A','#C39BD3 ','#F9E79F','#BA4A00','#ECF0F1','#616A6B','#EAF2F8','#4A235A','#3498DB' ];
+                                return colorList[params.dataIndex]
+                            }
+                        },
+                    },
+                }
+            ]
+        };
+
+        if (option1 && typeof option1 === "object") {
+            myChart1.setOption(option1, true);
+        }
+    }
+
+    //画吊装统计图
+    function drawlifting() {
+        var dom1 = document.getElementById("goods-plan-lifting");
+        var myChart1 = echarts.init(dom1);
+        var option1 = null;
+
+        option1={
+            title:{
+                text:"吊装统计",
+                left:'center',
+                textStyle:{
+                    //文字颜色
+                    //字体风格,'normal','italic','oblique'
+                    fontStyle:'normal',
+                    //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+                    fontWeight:'bold',
+                    //字体大小
+                    fontSize:14
+                }
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer:{
+                    type:'shadow'
+                }
+            },
+            grid:{
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top:'15%',
+                containLabel: true
+            },
+            yAxis:{
+                type:'value',
+                //boundaryGap:[0, 0.01],
+                //  axisLabel:{
+                //      formatter:'{value}(t)'
+                //  },
+                show:false,
+            },
+            xAxis:{
+                type:'category',
+                data:['计划','实际']
+            },
+            series: [
+                {
+                    name:'计划',
+                    type:'bar',
+                    data:[15.26,3.02],
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'top',
+                            formatter:'{c}(t)'
+                        }
+                    },
+                    barWidth:20,
+                    itemStyle: {
+                        normal: {
+                            // 随机显示
+                            //color:function(d){return "#"+Math.floor(Math.random()*(256*256*256-1)).toString(16);}
+
+                            // 定制显示（按顺序）
+                            color: function(params) {
+                                var colorList = ['#64BD3D','#EE9201','#29AAE3', '#B74AE5','#0AAF9F','#E89589','#16A085','#4A235A','#C39BD3 ','#F9E79F','#BA4A00','#ECF0F1','#616A6B','#EAF2F8','#4A235A','#3498DB' ];
+                                return colorList[params.dataIndex]
+                            }
+                        },
+                    },
+                }
+            ]
+        };
+
+        if (option1 && typeof option1 === "object") {
+            myChart1.setOption(option1, true);
+        }
+    }
+</script>
+
+</body>
+</html>

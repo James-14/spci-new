@@ -1,0 +1,339 @@
+/**公共样式**/
+body{
+  background: #ddd;
+ }
+@media (min-width:1302px) {
+.top{margin-top: 90px!important}
+}
+@media (min-width:768px) and (max-width:1301px) {
+.top{margin-top: 135px!important}
+}    
+@media (max-width:767px) {
+.top{margin-top: 100px!important}
+}
+.fix-center{position: relative;top:8px}
+.br-board{margin: 0 20px 2% 20px;background: #fff}
+ .statistics-bill{
+  height: 100vh;
+ }
+ .bill-body{
+  min-height: calc(100vh - 300px);
+  margin-bottom: 20px;
+ }
+ .item-header{
+   padding: 20px;
+ }
+.calendars{
+  margin: 15px 0;
+ }
+ .calendars .dates{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+ }
+ .calendars .dates .date-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-left: 1px solid #ddd;
+  background: #e6e9eb url('../../image/cstrMgn/date-icon.png') center center no-repeat;
+  cursor: pointer;
+ }
+ .calendars .link{
+   display: inline-block;
+   margin: 0 6px;
+ }
+ .calendars .labels{
+  display: inline-block;
+  width: 84px;
+ }
+ .btns{
+   display: inline-block;
+   width: 80px;
+   height: 32px;
+   line-height: 32px;
+   text-align: center;
+   border-radius: 4px;
+   margin: 0 5px;
+   cursor: pointer;
+ }
+ .btns.s-btn{
+   color: #fff;
+   background: #1f95d5;
+ }
+ .btns.r-btn{
+  color: #fff;
+  background: #eac83f;
+}
+.tables table{
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.tables table thead tr {
+  background: #eee;
+ }
+ .tables table tbody tr{
+  border-top: 1px solid #dedede;
+ }
+ .tables table thead tr th, .tables table tbody tr td{
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+ }
+ .tables table tbody tr td.red{
+   color: #e71f19;
+ }
+ .tables table tbody tr td.green{
+  color: #4abd7a;
+}
+ .tables table thead tr th:not(:last-child), .tables table tbody tr td:not(:last-child){
+  border-right: 1px solid #dedede;
+ }
+ .tables table tbody tr td input{
+  vertical-align: middle;
+ }
+ .tables .title td{
+  color: #fff;
+  background: #1f95d5;
+ }
+ .tables .thead td{
+  background: #eee;
+ }
+ .fix-bar{
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+}
+.fix-bar ul li{
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #bec7d2;
+  cursor: pointer;
+}
+.fix-bar ul li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.statistics-bill .bill-header .hd-list .item{
+  position: relative;
+}
+.statistics-bill .bill-header .hd-list .item a{
+  display: inline-block;
+  width: 100%;
+}
+.statistics-bill .bill-header .hd-list li.item.form>a{
+  background: url('../../image/cstrMgn/select.png') no-repeat 76% center;
+}
+.statistics-bill .bill-header .hd-list .sl-box{
+  position: absolute;
+  top: 36px;
+  left: 0px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+.statistics-bill .bill-header .hd-list .sl-box li{
+  height: 28px;
+  line-height: 28px;
+  font-weight: normal;
+}
+.statistics-bill .bill-header .hd-list .sl-box li a,.statistics-bill .bill-header .hd-list .sl-box li a:hover{
+  display: inline-block;
+  width: 100%;
+  font-weight: normal;
+}
+
+/**build-rate.html**/
+#echart1,#echart2,#echart3,#echart4,#echart5,#echart6,#echart7,#echart8{
+  padding-top: 15px;
+}
+.calendars .dates:last-child{
+  margin: 15px 0 0 84px;
+}
+.build-header .labels{
+  display: inline-block;
+  width: 84px;
+}
+.build-header .b-btns{
+  margin-top: 15px;
+}
+.build-body{
+  padding: 20px 0 0 20px;
+}
+.build-body li{
+  position: relative;
+  padding: 0 20px 20px 0;
+}
+.build-body li .box{
+  border: 1px solid #ddd;
+}
+.build-body li .tip{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  color: #d7171a;
+  padding-left: 16px;
+  background: url('../../image/cstrMgn/alert.png') no-repeat 0 center;
+  display: none;
+}
+.build-body li .tip.tip-err{
+  display: block;
+}
+.build-body li .box .total{
+  text-align: center;
+}
+.build-body li .box .info{
+  margin-top: 20px;
+  background: #dfdfdf;
+  padding: 15px;
+}
+.build-body li .box .info .title{
+  width: 96%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 10px 0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis; 
+}
+.build-body li .box .info p{
+  margin: 0px;
+  line-height: 24px;
+  color: #000;
+}
+.build-body li .box .info .labels{
+  display: inline-block;
+  width: 72px;
+  color: #999;
+  text-align:justify;
+  text-align-last:justify;
+  margin-right: 6px;
+}
+/**build-search.html**/
+.search-header {
+  padding-bottom: 0;
+}
+.search-header .labels{
+  display: inline-block;
+  width: 84px;
+  text-align:justify;
+  text-align-last:justify;
+}
+.search-header .item{
+  padding: 0 0 15px 0;
+}
+.search-header .item input{
+  width: 140px;
+}
+.search-body{
+  padding: 0 20px 20px 20px;
+}
+/**plan-analyse.html**/
+.analyse-header {
+  border-bottom: 1px solid #ddd;
+}
+.analyse-header h4{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+.analyse-body{
+  padding: 20px;
+}
+.analyse-body .tables table td .num{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #1f95d5;
+  background: #fff;
+}
+ /**适配**/
+  @media (max-width: 376px) {
+
+ }
+ @media (min-width: 376px) and (max-width: 476px) {
+
+ }
+ @media (min-width: 476px) and (max-width: 560px){
+  .search-header .item{
+    width: 50%;
+    padding: 0 15px 15px 0;
+  }
+  .search-header .item input{
+    width: 90px;
+  }
+ }
+ @media (min-width: 560px) and (max-width: 768px){
+  .search-header .item{
+    width: 50%;
+    padding: 0 15px 15px 0;
+  }
+  .search-header .item input{
+    width: 120px;
+  }
+ }
+ @media (min-width: 768px) and (max-width: 992px){
+  .calendars .dates:last-child{
+    margin: 0;
+  }
+  .calendars{
+    margin: 0;
+   }
+  .search-header .item{
+    padding: 0 15px 15px 0;
+  }
+  .search-header .item input{
+    width: 120px;
+  }
+ }
+
+ @media (min-width: 992px) and (max-width: 1200px){
+  .build-header .b-btns{
+    margin-top: 15px;
+  }
+  .calendars .dates:last-child{
+    margin: 0;
+  }
+  .calendars{
+    margin: 0;
+   }
+ }
+ @media (min-width: 1200px) and (max-width: 1446px){
+  .build-header .b-btns{
+    text-align: right;
+    margin: 0;
+  }
+  .calendars .dates:last-child{
+    margin: 0;
+  }
+  .calendars{
+    margin: 0;
+   }
+ }
+ @media (min-width: 1446px){
+  .build-header .b-btns{
+    text-align: right;
+    margin: 0;
+  }
+  .calendars .dates:last-child{
+    margin: 0;
+  }
+  .calendars{
+    margin: 0;
+   }
+   .search-header .item{
+     width: 16.333%;
+    padding: 0 15px 15px 0;
+  }
+  /**Tree**/
+ }

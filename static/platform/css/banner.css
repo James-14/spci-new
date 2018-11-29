@@ -1,0 +1,279 @@
+*{
+	font-family: Microsoft Yahei, sans-serif;
+}
+
+.fp-scroller  {
+	height: 100%!important;
+}
+
+.spotlight-banner {
+/* 	display:flex;
+	align-items:center; */
+	padding:50px;
+	height:100%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size: cover
+}
+
+/* 垂直居中 */
+.floater  {
+	float: left;
+	height: 50%;
+}
+
+.verticalor {
+	clear: both;
+	position: relative
+}
+
+.sp-1 {
+	background-image: url(../image/spotlight/bg2.0.png);
+	justify-content:space-between;
+}
+
+.sp-2 {
+	background-image: url(../image/spotlight/aerial_dancer_bg.png);
+}
+
+.spot-list {
+	padding: 0;
+}
+
+.spot-list li{
+	display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    padding-right: 25px;
+    cursor: default;
+}
+
+.sp-1 > .verticalor > img {
+	transition: 1s linear;
+    animation-name: scaleUp;
+    animation-duration: 5s;
+}
+
+.sp-2 > img {
+	position: relative;
+	left:15%
+}
+
+.sp-2-text {    
+	position: relative;
+    left: 20%;
+    transition:.3s linear;
+    animation-name: scaleUp;
+    animation-duration: 8s;
+}
+
+@keyframes scaleUp{
+	0%{
+		transform: translateY(120px) scale(.5);
+		opacity: 0.25;
+	}
+	50%{
+		transform: translateY(50px) scale(.9);
+		opacity: 0.5;
+	}
+	100%{
+		transform: translateY(0px) scale(1);
+		opacity: 1;
+	}
+}
+
+.banner-bg{
+	position: relative;
+	display: table;
+	width: 100%;
+	text-align: center;
+	background-image: url(../image/banner/bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+}
+
+.banner-bg img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.banner-circle-box{
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	top: 20px;
+}
+
+.banner-circle{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+@media (min-width:767px) and (max-width:998px) {
+	.banner-circle {
+		max-width: 50%;
+	}
+	.banner-circle-box {
+		top: 50px;
+	}
+}
+
+.oval{
+	width: 690px;
+	height: 345px;
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.white-line-col{
+	width: 1px;
+	height: 35px;
+	background: #fff;
+	position: absolute;
+}
+
+.white-line-row{
+	width: 35px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+}
+
+.line-1{
+	left: 50%;
+	bottom: 100%;
+	animation: myOrbit 6s linear infinite; 
+}
+
+.line-2{
+	left: 90%;
+	bottom: 81%;
+	transform: rotate(45deg);
+}
+
+.line-3{
+	left: 100%;
+	bottom: 50%;
+}
+
+.line-4{
+	left: 90%;
+	bottom: 9%;
+	transform: rotate(-45deg);
+}
+
+.line-5{
+	left: 50%;
+	top: 100%;
+}
+
+.line-6{
+	left: 10%;
+	bottom: 9%;
+	transform: rotate(45deg);
+}
+
+.line-7{
+	right: 100%;
+	bottom: 50%;
+}
+
+.line-8{
+	left: 10%;
+	bottom: 81%;
+	transform: rotate(-45deg);
+}
+
+.surround-menu{
+	position: absolute;
+	cursor: pointer;
+	color: #fff;
+}
+
+.surround-menu img {
+	max-width: 80%;
+}	
+
+@media (max-width:767px) {
+.surround-menu img{
+	max-width: 60%;
+	height: auto;
+	vertical-align: middle;
+}	
+}
+
+.surround-menu a{
+	color: #fff!important
+}
+
+.surround-menu:hover{
+	animation: spin 3s linear infinite;
+}
+
+.surround-menu-1{
+	left: 50%;
+	top: -135px;
+	transform: translateX(-50%);
+}
+
+.surround-menu-2{
+	left: 89%;
+	top:-31px;
+	display: inline-table;
+}
+
+.surround-menu-3{
+	right: -117px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.surround-menu-4{
+    left: 89%;
+    bottom: -45px;
+    display: inline-table;
+}
+
+.surround-menu-5{
+	left: 50%;
+	bottom: -129px;
+	transform: translateX(-50%);
+}
+
+.surround-menu-6{
+	left: -3%;
+	bottom: -42px;
+}
+
+.surround-menu-7{
+	top: 50%;
+	left: -117px;
+	transform: translateY(-50%);
+}
+
+.surround-menu-8{
+	left: -3%;
+	top: -25px;
+}
+
+@keyframes spin {
+	0% {filter: brightness(100%);}
+	12.5% {filter: brightness(150%)}
+	25% {filter: brightness(200%);}
+	37.5% {filter: brightness(175%)}
+	50% {filter: brightness(150%)}
+	62.5% {filter: brightness(175%)}
+	75% {filter: brightness(200%);}
+	87.5% {filter: brightness(150%)}
+	100% {filter: brightness(100%)}
+}
+

@@ -1,0 +1,30 @@
+﻿#surroundCharBox{
+	height:350px;
+	width:650px; 
+	position:absolute; 
+	margin:10px auto;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 200;
+}
+#surroundCharBox a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	border: 1px solid transparent;
+	color:#00BAFF;
+	font-weight:bold;
+	padding:30px 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	text-decoration: none;
+}
+#surroundCharBox a:hover{
+	border:1px solid #eee;
+	background-image: url(../image/banner/zhong.png);
+	border: 1px solid transparent;
+	color: #fff;
+	border-radius:5px;
+}

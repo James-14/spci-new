@@ -1,0 +1,154 @@
+@media (min-width:1302px) {
+.dashboard-box .dashboard:first-of-type{margin-top: 90px!important}
+.br-board{margin-top: 82px!important}
+}
+@media (min-width:768px) and (max-width:1301px) {
+.dashboard-box .dashboard:first-of-type{margin-top: 81px!important}
+.br-board{margin-top: 135px!important}
+}    
+@media (max-width:767px) {
+.dashboard-box .dashboard:first-of-type{margin-top: 80px!important}
+.br-board{margin-top: 80px!important}
+.day-tail{border-left-color: transparent!important}
+}
+
+.dashboard-box{padding: 0 30px}
+/*	IE8不支持flex布局,使用bs的row布局 */
+.dashboard	{
+	position:relative;
+	transform: translateZ(0px);
+	margin-bottom:15px;
+	background: white;
+	border:1px solid transparent;
+	transition:all .25s ease;
+	backface-visibility: hidden;
+	overflow: hidden;
+	box-sizing: content-box!important;
+	box-shadow: 0 0 12px rgba(0,0,0,0.1);
+	border-radius:3px
+}  
+.board-link{font-weight:bold;color:#000}
+.board-link:hover{color:#000}
+.board2{height: 140px;margin: 20px 0;padding: 0!important;border-left:1px solid #ccc}
+
+.dashboard{border-left:8px solid #417eb4}
+.dashboard:hover{box-shadow:  0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2)}
+ .overdue{border-left:8px solid #db4e45!important} 
+.board1-dad{padding: 20px}
+.board2-dad{padding: 0!important;min-height: 160px!important}
+.board2{text-align: center}
+.ctBoard{border-left:1px solid #ccc}
+.name-info{margin-top: 10px}
+.name-info-1{font-family: Microsoft Yahei;font-size: 12px;white-space: nowrap}
+.name-info-2{text-align: left}
+.no-chart .name-info-1{text-align:center}
+.no-chart .name-info-2{}
+.name-info-1 ul{list-style-type:none;padding:0}
+.day-tail{border-left:1px solid #ccc}
+.chart-info-db{margin:30px 20px 30px 0px;height: 120px}
+.date-info{padding: 14px;margin:20px 20px 0 0}
+.date-info-1{padding: 0!important}
+.date-info-1 ul{border-right:1px solid #ccc;margin:0;padding: 0;text-align: center}
+.date-info-1:last-child ul{border-right: 0}
+.date-info-1 li{list-style-type: none;font-family: Microsoft Yahei;font-size: 12px;
+	color: #666;text-align: center;display: inline-block}
+.date-info-1 li:last-child span{margin:0 5px 0 5px;font-size: 16px}
+.days-count{font-size:24px!important;color:#417db1;font-weight:bold}
+
+.rt{float: right;width: 30.5%;margin-right: 1.5%;background: #fff;position: relative}
+#productionProgress{background: #fff}
+#productionProgress strong{font-size: 16px;font-family: Microsoft Yahei;margin:10px;display: inline-block}
+#rtLine{width:100%;height: 1px;border-top:1px solid #ccc}
+#switch{position: absolute;right: 21px;top:7px}
+
+.options{display: inline-block;border:1px solid #ccc;background: #fff;margin: 20px 20px 20px 0;padding: 10px;font-size: 12px;
+font-family: Microsoft Yahei;border-radius: 2px;position: relative}
+.active-op{border:1.2px solid #00a0e9}
+.hookBox{display: none;position: absolute;right: -1px;bottom: 0;width: 10px;height: 10px;border:1px solid #00a0e9;background: #00a0e9}
+.hook{display: none;border-bottom:1px solid #fff;border-right:1px solid #fff;height: 10px;width:5px;position: relative;left:2px;top:-1px;transform:rotate(45deg)}
+#first-option{margin-left: 20px}
+#yBtn{text-align: center;margin:20px}
+#yBtn button{font-size: 16px;font-family: Microsoft Yahei;color: #fff;background: #00a0e9;border:1px solid #00a0e9
+;padding: 5px 20px 5px 20px}
+#yBtn button:hover{box-shadow: 0 0 10px 0 #888}
+
+#progressList{list-style-type: none;overflow: hidden;padding: 0;margin:20px}
+#progressList li{margin:0;float: left;width: 25%;font-size: 12px;color: #666;font-family: Microsoft Yahei}
+#progressList li:last-child{width: 50%;height: auto;position: relative;top:4px;text-align: center}
+#progressList span{font-size: 16px;color: #00a0e9}
+#progressList li:last-child span{font-size: 12px;color:#000;font-weight: bold}
+
+.rtboard{display: flex;border-bottom: 1px solid #ccc}
+.rtboard:last-child{border-bottom: 0}
+.rtboard1{flex:3;margin:20px 0 20px 20px;border-right:1px solid #ccc}
+.rtboard1 table{width:100%}
+.rtboard2{flex:2}
+#boardTitle{margin:0 0 10px 0!important}
+.productionProgress table{width: 100%;margin-top:10px}
+.productionProgress table th{font-family: Microsoft Yahei;font-size: 16px;padding: 2px;text-align: center}
+.productionProgress table th:first-child{text-align: left}
+.productionProgress table th:last-child{text-align: right}
+.productionProgress table td{font-family: Microsoft Yahei;font-size: 12px;color:#666;text-align: center}
+.productionProgress table td:first-child{text-align: left}
+.productionProgress table td:last-child{text-align: right}
+.no-chart-table{margin-right: 20px;border: 0}
+
+/**make work area wider**/
+.fullSrc{margin:0!important;transition: .4s linear}
+.slideNavBtn{position: fixed;right:1px;transition:all .5s ease;opacity: 1;z-index: 10;font-size: 20px}
+.slideNavBtn span:hover{cursor: pointer}
+.toTop{margin-top: 10px!important;transition: all .2s linear}
+.getHide{top: -2px!important;transform: rotate(-180deg)}
+.widerArea{width:100%!important}
+@media (min-width: 1169px) {
+.slideNavBtn{top: 80px}	
+}
+ @media (min-width:1090px) and (max-width: 1168px) {
+.slideNavBtn{top: 150px!important}	
+} 
+ @media (min-width:768px) and (max-width: 1089px) {
+.slideNavBtn{top: 120px!important}	
+} 
+@media (max-width: 767px) {
+.slideNavBtn{top: 90px!important}	
+}
+/********/
+
+@media (max-width: 767px) {
+		.all-look{display: block;width: 100%;height: 300px}
+		.noti{left:45%}
+		.all-look{border-right:1px solid #ccc}
+}
+
+@media (min-width:768px) and (max-width:1167px) {
+.date-info{margin-right: 0}
+.board2{min-height: 200px}
+.name-info-1{text-align:center;margin-bottom: 15px}
+.name-info-2{text-align:center;margin-bottom: 15px}
+.col-md-4{padding-left: 15px!important}
+}
+
+@media (max-width:767px) {
+.rtboard{flex-direction:column}	
+.name-info{flex-direction:column}
+.name-info-1{text-align:center;margin-bottom: 15px}
+.name-info-2{text-align:center;margin-bottom: 15px}
+.dashboard{float: none;width:97%;margin-top: 50px}	
+.dashboard:first-of-type{margin-top: 0px!important}
+.ctBoard{border: 0}
+.rt{width: 97%;margin:1.5%;clear: both}
+.dashboard{flex-direction:column}
+.board2-dad{flex-direction:column}
+.board2{height: 150px}
+.chart-info-db{margin-right: 0}
+.date-info{margin-right: 0}
+.date-info-1 ul{display: block}
+.date-info-1 li{display: block}
+.chart-info{margin-right:0}
+.rtboard2{height: 120px}
+.col-md-4{padding-left: 15px!important}
+}
+
+@media (max-width: 440px) {
+.chart-info-db{height: 360px}	
+}

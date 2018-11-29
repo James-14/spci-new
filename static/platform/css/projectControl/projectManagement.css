@@ -1,0 +1,23 @@
+.dates{
+  position: relative;
+  display: inline-block;
+}
+
+.dates .date-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-left: 1px solid #ddd;
+  background: #e6e9eb url('../../../images/comm/date-icon.png') center center no-repeat;
+  cursor: pointer;
+}
+
+.dates input{
+  width: 160px;
+  height: 32px;
+  padding-left: 4px;
+  border: 1px solid #ddd;
+}

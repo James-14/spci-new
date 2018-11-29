@@ -1,0 +1,221 @@
+.container-fluid{
+  padding: 0 20px;
+}
+.white-bg{
+  background: #fff;
+}
+.g-box{
+  margin: 0px;
+}
+.g-pad{
+  margin: 0 20px;
+}
+.g-box input, .g-pad input{
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+}
+
+/**网页头部**/
+.sm-avatar{
+  display: inline-block;
+}
+.bill-header{
+  padding: 0;
+}
+.bill-header .header-box{
+  padding: 20px 0;
+  background: #fff;
+}
+.bill-header .logo-row{
+  position: relative;
+  margin-bottom: 10px;
+}
+.bill-header .logo-row .logo{
+  display: inline-block;
+  padding-left: 25px;
+}
+.bill-header .logo-row .logo, .bill-header .logo-row .sm-avatar{
+  height: 40px;
+}
+.bill-header .logo-row .logo img, .bill-header .logo-row .sm-avatar img{
+  height: 40px;
+}
+.bill-header .logo-row .sm-avatar{
+  text-align: right;
+}
+.bill-header .logo-row .sm-menu{
+  display: inline-block;
+  width: 40px;
+  max-width: 40px;
+  cursor: pointer;
+}
+.bill-header .logo-row .search-box{
+  margin-top: 15px;
+  padding-right: 25px;
+  text-align: right;
+}
+
+.bill-header .logo-row .navbar-list ul{
+  background: rgba(256, 256, 256, .8);
+}
+.bill-header .logo-row .navbar-list{
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  z-index: 100;
+  display: none;
+}
+.bill-header .logo-row .navbar-list li{
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.bill-header .logo-row .navbar-list li.active{
+  font-weight: bold;
+  color: #000;
+}
+.bill-header .search{
+  display: inline-block;
+  width: 192px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #cbcccb;
+  border-radius: 16px;
+  margin: 0 15px 0 10px;
+  background: #f5f5f5;
+}
+.bill-header .search input{
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: top;
+  background: #f5f5f5;
+}
+.bill-header .search .s-icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('../../images/cstrMgn/search.png');
+  vertical-align: middle;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.bill-header .navigate-row{
+  height: 44px;
+  line-height: 44px;
+  font-size: 0;
+  display: none;
+}
+.bill-header .navigate-row .avatar-box{
+  text-align: right;
+  padding-right: 40px;
+}
+.bill-header .navigate-row ul{
+  padding-left: 10px;
+}
+
+.bill-header .navigate-row ul li.item{
+  display: inline-block;
+  width: 100px;
+  font-size: 16px;
+  color: #666666;
+}
+
+/* .bill-header .navigate-row ul li.item:first-child{
+  width: 80px;
+} */
+.bill-header .navigate-row ul li.item a{
+  color: #666666;
+}
+.bill-header .navigate-row ul li.active a{
+  color: #000;
+  font-weight: bold;
+}
+.bill-header .navigate-row ul li.item a:hover{
+  color: #000;
+  font-weight: bold;
+}
+
+/**网页底部**/
+.bill-footer{
+  background: #000;
+  padding: 40px;
+  text-align: center;
+}
+.bill-footer p{
+  line-height: 24px;
+  color: #6e6c6b;
+}
+
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+
+@media (max-width: 484px) {
+  .logo img{
+    width: 80%;
+  }
+  .logo img{
+    width: 100%;
+  }
+  .lg-avatar{
+    display: none;
+  }
+  .bill-header .logo-row .search-box{
+    margin-top: 15px;
+  }
+  .navigate-list{
+    width: 100%;
+  }
+  .bill-header .navigate-row ul li.item{
+    font-size: 12px;
+  } 
+ }
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) { 
+  .sm-avatar{
+    display: none;
+  }
+  .bill-header .header-box{
+    padding: 20px 15px;
+  }
+  .bill-header .logo-row .logo,.bill-header .logo-row .logo img{
+    height: 100%;
+  }
+  .bill-header .logo-row .navbar-list{
+    display: none;
+  }
+  .bill-header .navigate-row{
+    display: block;
+  }
+  .bill-header .logo-row .search-box{
+    text-align: right;
+  }
+  .bill-header .logo-row .search-box{
+    margin-top: 0;
+  }
+  .bill-header .search{
+    margin-top: 25px;
+  }
+
+ }
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px){
+  
+}
+@media (min-width: 992px) and (max-width: 998px){
+  
+ }
+@media (min-width: 998px) and (max-width: 1200px){
+  
+ }
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

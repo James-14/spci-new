@@ -1,0 +1,43 @@
+.call-pop{cursor: pointer}
+.pop-btn-group{margin-top: 20px}
+.pop-btn-group .btn:first-of-type{margin-right: 80px}
+#tableLogo{position: absolute;left: 20px;top:20px;background-image: url(${ctxPath}/static/platform/image/cstrMgn/pp.png);width: 75px;background-repeat: no-repeat}
+.pop-btn-group .btn:last-of-type{margin-left: 80px}
+.pop-background{width: 100%;height: 100%;background: rgba(0,0,0,0.4);position: fixed;z-index: 1500;opacity: 1;left: 0;top: 0;text-align: center;display: block}
+.revealIn{animation:unfoldIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards}
+.revealOut{animation:unfoldOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards}
+.pop-content{background: #fff;width: 80%;margin-left: 10%;position: relative;padding: 8px 15px;height: 100%;overflow: auto}
+.pop-content > p{text-align: left}
+.close-pop{font-size: 24px;font-weight: bold;color: #ddd;padding: 0px 8px;transition: background .1s linear;cursor: pointer;border-radius: 100%;position: relative;bottom: 80px;z-index: 100}
+.pop-content-table{max-width: 100%;overflow: auto;height: 90%}
+.close-pop:hover{background: #e66249;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)}
+.filter-menu{border: 1px solid #ccc;transition: .2s ease}
+.box-collapse {border-color: transparent}
+.hidden-panel {width: 0px}
+.timeAccordion{border: 1px solid #ccc}
+.issueForm{border: 1px solid #ccc}
+#issueTitle {min-height: 34px;height: auto;white-space: normal}
+#issueSector {min-height: 34px;height: auto;white-space: normal}
+#addPic{opacity: 0;position: absolute;z-index: -1}
+#addPic + label{background: #1f98c7;padding: 8px 6px 8px 10px;margin-bottom: 12px;color: #fff;position: relative;border-radius: 2px;cursor: pointer;transition:opacity .3s linear}
+#addPic + label:hover{opacity: 0.7}
+#addPic + label:before{display: inline-block;font-family: 'Glyphicons Halflings';content:'\002b';position: relative;top: 2px;right: 2px}
+#addPlugin{opacity: 0;position: absolute;z-index: -1}
+#addPlugin + label{position: relative;left: 8px;background: #1f98c7;padding: 8px 6px 8px 10px;margin-bottom: 12px;color: #fff;position: relative;border-radius: 2px;cursor: pointer;transition:opacity .3s linear}
+#addPlugin + label:hover{opacity: 0.7}
+#addPlugin + label:before{display: inline-block;font-family: 'Glyphicons Halflings';content:'\e027';position: relative;top: 2px;right: 2px}
+.tg  {width: 100%;height: 100%;border-collapse:collapse;border-spacing:0}
+.tg td{font-family:Arial, sans-serif;font-size:14px;border-style:solid;border-width:1px;overflow:auto;word-break:normal;text-align: center;vertical-align: middle}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;border-style:solid;border-width:1px;overflow:auto;word-break:normal;text-align: center;vertical-align: middle}
+
+@media (min-width: 1200px) and (max-width: 1520px) {
+	.inline-input .form-control {
+		width: 126px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.form-inline .form-group {
+		margin-bottom: 15px;
+	}
+}

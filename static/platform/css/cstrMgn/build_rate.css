@@ -1,0 +1,6 @@
+.intoProgress:after{content: '';display: inline-block;visibility: hidden;position: absolute;bottom: 50%;right: 24px;width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0;
+	border-color: transparent transparent #007bff transparent;transition:all .3s linear}
+.intoProgress:hover:after{visibility: visible;border-width: 8px 0 8px 16px;border-color: transparent transparent transparent #007bff}

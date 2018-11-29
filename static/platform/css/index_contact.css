@@ -1,0 +1,58 @@
+.idx-section{width: 100%; position: relative; overflow: hidden}
+/* 联系我们container */
+.shw-contact{padding: 5rem 5%}
+/* 联系我们背景图片 */
+.shw-contact .content{ background: url(../image/newIndex/ct.jpg) no-repeat left center #eee; height: 52rem} 
+/* 联系我们的方式 */
+.shw-contact .left{ float: left; padding: 5.87rem 64px 0 92px; width: 340px;}
+.shw-contact .left h2{ font-size: 3rem!important; color: #a6927b; padding-bottom: 44px;}
+.shw-contact .left p{ color: #fff; padding-top: 10px;font-size:1.6rem;margin-bottom: 0!important}
+.shw-contact .left p span{ font-size:1.6rem!important}
+/* 社交分享图标 */
+.shw-contact .left .sns-icon{ margin-top: 5.5rem;width:340px}
+.shw-contact .left .sns-icon a{float: left; width: 41px; height: 33px; margin-right: 20px;}
+.shw-contact .left .sns-icon a.wx{ background: url(../image/newIndex/wx.png) no-repeat center;}
+.shw-contact .left .sns-icon a.wb{ background: url(../image/newIndex/wb.png) no-repeat center;}
+.shw-contact .left .sns-icon a.in{ background: url(../image/newIndex/in.png) no-repeat center;}
+.shw-contact .left .sns-icon a.fb{ background: url(../image/newIndex/fb.png) no-repeat center;}
+.shw-contact .left .sns-icon a.sns{ background: url(../image/newIndex/sns.png) no-repeat center;}
+/* 访客联系信息 */
+.shw-contact .right{width:704px; float: right; background: #eee;height: 52rem;}
+.shw-contact .right .form-box{ width:510px; margin: 0 auto; padding-top: 4.8rem;color:#1d202e; }
+.shw-contact .right h3{ font-size:2.8rem!important; }
+.shw-contact .right p{ font-size:1.5rem!important; line-height: 1.8rem; padding-top: .3rem; padding-bottom:1.2rem}
+.shw-contact .right .form-control{color: #aaa; border:none; background: #fff; height: 4.2rem; padding: 3px .8rem; border-radius: 1rem; box-sizing: border-box; font-size: 1.5rem!important;margin-bottom: 2rem}
+.shw-contact .right .w1{ width: 47%;}
+.shw-contact .right .w2{ width: 100%;}
+.shw-contact .right textarea.form-control{ height: 8.75rem; padding-top:.5rem; padding-bottom: .5rem}
+.shw-contact .right .btn{ width: 100%; line-height: 3.62rem; border: none; border-radius: .5rem; background: #655544; color: #fff; font-size: 1.75rem!important; margin-top: 1rem}
+@media (max-width:1165px) {
+	.shw-contact .left{width: 100%!important}
+	.shw-contact .right{width: 100%!important;position: relative;top:45px}
+	.shw-contact .right img{max-width: 100%}
+}
+@media screen and (max-width:1281px){
+    .shw-contact {padding: 3.5rem 0;}
+}
+
+	@media (max-width:766px) {
+	.shw-contact .left .sns-icon{overflow: auto;width: auto}
+	.shw-contact .left{padding:0 0 64px 0}
+	.shw-contact .right .form-box{width: 100%;text-align: center}
+	.shw-contact .right .w1{width: 90%;margin:5%}
+	.shw-contact .right .w2{width: 90%;margin:5%}
+	.shw-contact .right{height: auto}
+	.shw-contact .right .btn{width: 90%;margin:5%}
+	.w1{width: 100%}
+	#cancel{width: 90%;margin: auto}
+	}
+
+/* 姓名，邮箱没有水平对齐 */
+#userNameId {
+	position: relative;
+	top: 5px;
+}
+#mailId {
+	position: relative;
+	top: 5px;
+}

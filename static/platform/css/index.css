@@ -1,0 +1,98 @@
+    *{font-family: "Microsoft Yahei","arial","Times New Roman"}
+
+    @media (min-width:1302px) {
+    .banner{margin-top: 0px}
+    } 
+    
+    @media (min-width:768px) and (max-width:1301px) {
+    .banner{margin-top: 0px}
+    }
+    
+    .banner img{max-width: 100%;height: auto}
+
+	span{cursor: default}
+
+    .showMenu{height: 350px;display: flex;flex-wrap: wrap}
+    .MenuBox{flex: 1;background: #fff;display: flex;align-items: center;justify-content: center;height: auto}
+    .MenuBox a{font-size:16px;color:#000;text-decoration:none;transition:all .3s cubic-bezier(.25,.8,.25,1)}
+    .MenuBox a:hover{text-decoration:none;transform:scale(1.1);font-weight:bold}
+    .MenuBox a:hover ul{border-radius:4px 4px 8px 8px;box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);border:1px solid #ccc}
+    .MenuBox ul{margin: 0;padding: 0;text-align: center}
+    .MenuBox ul li{list-style-type: none;padding: 20px}
+    .MenuBox ul li:first-child{height: 117px;display: flex;align-items: center;justify-content: center}
+    .MenuBox ul li img{background: #efefec;border-radius: 50%;max-width: 100%;transition: All .6s ease-in-out}
+
+    .live-chart{padding-top: 20px}
+    .live-chart a{cursor:pointer;transition: background-color .3s;}
+    .live-chart a:hover{text-decoration:none;background:#d35a48;color:#fff;padding:2px 5px 2px 5px;border-radius:6px}
+    .live-chart table tr{transition: all 1.0s ease}
+    .live-chart table th,td{margin-top: 1px}
+    .live-chart table th:first-child{border-left:5px solid red;padding-left: 15px}
+    .live-chart table th:last-child{text-align:right}
+    .live-chart table td:last-child{text-align:right}
+	
+	.introduce{display: flex;padding: 40px;background: #f6f5f5;height: auto;align-items: center}
+    .introduce:nth-of-type(even){background: #fff}
+    .introduce:nth-of-type(odd) .with-text{padding-left:100px}
+    .introduce:nth-of-type(even) .with-text{padding-left:100px}
+	.with-pic{flex:1;text-align: center}
+	.with-text{flex:1;text-align: center}
+    .with-text > ul{margin 0;padding: 0;list-style-type:none;display:inline-block;
+        position:relative;top:20px;left:6px}
+    .with-text > ul > li{padding: 5px 5px 5px 0}
+    .with-text > p{margin-top: 20px}
+	// .t1{font-size: 20px;color: #000}
+	// .t2{font-size: 16px;color: #d35a48;margin-left: 5px}
+	.slogan{color: #666666;text-align:left}
+    .slogan-content{text-indent: 2em}
+    .more-button{padding:2px 14px;border-radius:12px;color:#fff;background:#e61c1f}
+    .more-button:hover{color:#fff;opacity:0.8}
+    #mrMgr{width: 80px;height: 80px;border-radius: 100%}
+
+	.title-display{background: white;height: 160px;text-align: center;font-family: Microsoft Yahei}
+	.main-title{font-size: 24px;color: #333;position: relative;top:50px}
+	.miniLine{border: 1px solid #e61c1f;height: 1px;width:25px;position:relative;top:55px;left:49%}
+	.title-info{font-size: 16px;color: #999;position: relative;top:60px}
+
+    .gallery-display{display:flex;flex-wrap:wrap;background: #fff}
+    .gallery-item{position: relative;flex:1;padding: 10px;margin: 10px 0 10px 0;text-align: center}
+    .gallery-item img{opacity:1;-webkit-transition: opacity 0.3s}
+    .gl-item-info{z-index: 100;position: absolute;top: 50%;left:50%;background: #fafafa;transition:.7s ease;opacity: 0;
+        transform:translate(-50%,-50%);padding: 10px;font-family: Microsoft Yahei;font-weight: bold;letter-spacing: 1px;border-radius:10px}
+    .gallery-item:hover img{opacity: 0.3;cursor: pointer}
+    .gallery-item:hover .gl-item-info{opacity: 0.8}
+    .gallery-logo-item{margin:0 10px 0 20px}
+
+	@media(max-width: 1024px) {
+        .introduce:nth-of-type(even) .with-text{padding-left: 0}
+        .introduce:nth-of-type(odd) .with-text{padding-left: 0}
+        .introduce{padding: 15px}
+	}
+
+    @media (max-width:767px) {
+        .banner{margin-top: 0px}
+        .showMenu{flex-direction: column}
+        .MenuBox{justify-content: center;border-bottom:1px solid #efefec}
+        .MenuBox ul li:first-child{height: 60px}
+        .MenuBox ul li{display: flex;align-items: center}
+        .MenuBox ul li{float: left;height: 60px;padding: .2em}
+        .MenuBox ul li img{height: 55px}
+        .MenuBox ul li a{font-size: 16px}
+        .introduce{flex-direction:column;align-items: stretch;padding: 10px}
+        .with-text{padding-left:0!important}
+        .MenuBox ul{height:60px}
+        .MenuBox a:hover ul{box-shadow:none;border-color: transparent}
+        .miniLine{left:48%}
+    }
+
+     @media (max-width:525px) {
+        .with-pic img{max-width: 100%}
+     }
+
+     @media (max-width:414px) {
+        .gallery-display{display:block}
+        .gallery-item{margin: 0 10px 0 10px}
+        .gallery-item img{max-width:100%}
+        .gallery-logo-item img{width:35%}
+        .miniLine{left:46%}
+     }

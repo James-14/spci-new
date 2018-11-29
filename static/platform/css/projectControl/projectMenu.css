@@ -1,0 +1,13 @@
+.creator-container{overflow-y: hidden;text-align: center;padding-left: 6%}
+.creator-container a{color: #000;text-decoration: none}
+.creater-metro{list-style-type: none;padding: 0;margin:0}
+.image-metro{text-align: center;padding-top: 50px}
+.image-metro img{display: initial}
+.creater-metro li:first-child{background: #4384bc;padding: 40px 0;border-radius: 12px}
+.creater-metro li:last-child{padding: 10px 0;font-weight: bold}
+@media (max-width: 992px) {
+	.creator-container{padding-left: 0}
+	.creater-metro{border: 1px solid #000}
+	.creater-metro li:first-child{width: 230px;position: relative;left:50%;transform: translateX(-50%);}
+	.image-metro img{transform: rotate(90deg);position: relative;bottom:25px}
+}
