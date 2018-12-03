@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e3fb8c-1ee4-4a95-bec2-d76d90866ebd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/construction_plan.html" beforeDir="false" afterPath="$PROJECT_DIR$/construction_plan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/login_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_graphics.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_graphics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_model.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/platform/css/main_new.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/platform/css/main_new.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/platform/css/main_new.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="1075" column="17" lean-forward="true" selection-start-line="1075" selection-start-column="17" selection-end-line="1075" selection-end-column="17" />
+            <state relative-caret-position="341">
+              <caret line="1119" column="22" selection-start-line="1119" selection-start-column="22" selection-end-line="1119" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -34,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login_new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1600">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="34" column="42" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -91,6 +84,7 @@
       <find>.artifacts-item-right</find>
       <find>login-main-meng</find>
       <find>login-main-mid</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,6 +123,24 @@
             <path>
               <item name="spci-new" type="b2602c69:ProjectViewProjectNode" />
               <item name="spci-new" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spci-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spci-new" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spci-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spci-new" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spci-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spci-new" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,15 +204,15 @@
       <updated>1543472793510</updated>
       <workItem from="1543472796235" duration="7576000" />
       <workItem from="1543538366587" duration="18640000" />
-      <workItem from="1543822696485" duration="2427000" />
+      <workItem from="1543822696485" duration="3226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28643000" />
+    <option name="totallyTimeSpent" value="29442000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -305,20 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/platform/css/main_new.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="1075" column="17" lean-forward="true" selection-start-line="1075" selection-start-column="17" selection-end-line="1075" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_model.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -346,6 +344,20 @@
             <element signature="n#tr#14;n#tbody#0;n#table#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#tr#15;n#tbody#0;n#table#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/platform/css/main_new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="1119" column="22" selection-start-line="1119" selection-start-column="22" selection-end-line="1119" selection-end-column="22" />
         </state>
       </provider>
     </entry>
