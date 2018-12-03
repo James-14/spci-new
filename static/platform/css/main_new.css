@@ -39,6 +39,7 @@ body{
 .project-index-search{
   padding: 20px 20px;
   background-color: #ddd;
+  font-size: 14px;
 }
 .project-index-search-a{
   margin-left: 20px;
@@ -55,18 +56,26 @@ body{
 
 }
 .project-index-senior-search span{
-  margin-right: 20px;
+  margin-right: 5px;
   margin-top: 10px;
   display: inline-block;
 }
+.project-index-senior-search span:last-child{
+  margin-right: 0;
+}
 
-.project-index-senior-search input{
+.project-index-senior-search input[type="text"]{
   border: 1px solid #c9c9c9;
+  width: 100px;
+}
+.project-index-senior-search input[type="button"]{
+  border: 1px solid #c9c9c9;
+  width: 80px;
 }
 
 .project-index-senior-search select{
   border: 1px solid #c9c9c9;
-  width: 100px;
+  width: 80px;
 }
 .project-search-hide{
   background-color: #fff;
@@ -96,20 +105,39 @@ body{
   margin: 0 auto;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 1440px) and (max-width: 1500px) {
+
+.project-content ul li{
+    float: left;
+    margin-left: 25px;
+    margin-top:15px;
+    border: 1px solid #c9c9c9;
+}
+
+@media screen and (min-width: 1900px) and (max-width: 1950px) {
+    .project-content ul{
+        width: 1863px;
+    }
+    .project-content ul li{
+        margin-left: 17px;
+    }
+}
+
+@media screen and (min-width: 1580px) and (max-width: 1820px) {
+    .project-content ul{
+        width: 1533px;
+    }
+    .project-content ul li{
+        margin-left: 23px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1570px) {
   .project-content ul{
-    width: 83%;
-    margin: 0 auto;
-    padding-bottom: 20px;
+      width: 1165px;
   }
 }
 
-.project-content ul li{
-  float: left;
-  margin-left: 25px;
-  margin-top:20px;
-  border: 1px solid #c9c9c9;
-}
+
 .project-content-item-top{
   position: relative;
 }
@@ -215,7 +243,7 @@ body{
   width: 185px;
   background-color: #ddd;
   padding-top: 10px;
-  height: 544px;
+  height: 639px;
   overflow: auto;
 }
 .project-model-tree-head{
@@ -286,7 +314,7 @@ body{
   width: 80%;
 }
 .project-model-middle{
-  height: 589px;
+  height: 684px;
   text-align: center;
   width: auto;
   border-bottom: 1px solid #ddd;
@@ -296,12 +324,12 @@ body{
 .project-model-right{
   float: right;
   width: 185px;
-  height: 589px;
+  height: 684px;
   border: 1px solid #ddd;
   border-top: none;
   overflow: auto;
   overflow-x:hidden;
-  margin-top: -589px;
+  margin-top: -684px;
 }
 .project-model-right-top{
   text-align: center;
@@ -345,11 +373,11 @@ body{
   color: #1FCA6A;
 }
 .project-graphics-middle-content{
-  height: 539px;
   overflow: auto;
 }
 .ifram-page-body{
   border-bottom: none;
+    padding-bottom: 0px;
 }
 
 
@@ -357,9 +385,7 @@ body{
 
 /*项目图形开始*/
 .project-graphics-middle{
-  height: 589px;
   width: auto;
-  border-bottom: 1px solid #ddd;
   padding-left:185px;
 }
 .project-graphics-middle-top{
@@ -615,11 +641,29 @@ body{
   height: 21px;
 }
 
+@media screen and (min-width: 1900px) and (max-width: 1930px) {
+    .artifacts-library-content > ul{
+        width: 1863px;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    .artifacts-library-content li:nth-child(13n+0){
+        margin-right: 0px;
+    }
+}
 
+@media screen and (min-width: 1351px) and (max-width: 1430px) {
+    .artifacts-library-content > ul{
+        width: 1300px;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    .artifacts-library-content li:nth-child(9n+0){
+        margin-right: 0px;
+    }
+}
 
-
-
-@media screen and (min-width: 1170px){
+@media screen and (min-width: 1170px) and (max-width: 1350px) {
     .artifacts-library-content > ul{
         width: 1146px;
         margin: 0 auto;
@@ -675,7 +719,7 @@ body{
 .artifacts-item-right{
   float: left;
   width: 185px;
-  height: 662px;
+  height: 750px;
   border: 1px solid #ddd;
   border-top: none;
   overflow: auto;
@@ -772,8 +816,8 @@ body{
   color: #3399cc;
 }
 .artifacts-item-middle{
-  height: 662px;
-  line-height: 662px;
+  height: 750px;
+  line-height: 750px;
   text-align: center;
   width: auto;
   border-bottom: 1px solid #ddd;
@@ -1022,11 +1066,86 @@ body{
 .login-main-mid{
   position: absolute;
   top: 30%;
-  left: 35%;
-  width: 450px;
-  height: 320px;
+  left: 41%;
+  width: 300px;
+  height: 300px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
+    z-index: 99;
+    display: none;
+    opacity: 0.8;
+}
+.login-main-title{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    color: #fff;
+    font-size: 14px;
+    z-index: 99;
+}
+.login-main-title span:nth-child(1){
+    border-right: 2px solid #FFFFFF;
+    width: 140px;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.login-main-meng{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.login-main-title a{
+    color: #ffffff;
+}
+.login-main-mid-top{
+    text-align: center;
+    color: #2EA7F5;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.login-main-mid-content{
+    text-align: center;
+    margin-top: 30px;
+}
+.login-main-mid-content input[type="password"],
+.login-main-mid-content input[type="text"]{
+    width: 196px;
+    height: 22px;
+}
+.login-input{
+    margin-bottom: 25px;
+}
+.login-span-text
+{
+    vertical-align: middle;
+    font-size: 12px;
+}
+.login-checkbox{
+    vertical-align: middle;
+}
+.login-main-mid-content-jizhu{
+    width: 120px;
+    margin-left: 20px;
+}
+.login-btn{
+    width: 200px;
+    color: #FFFFFF;
+    background-color: #2EA8F5;
+    border: none;
+    height: 27px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.login-main-mid-content-wj{
+    font-size: 12px;
+    width: 120px;
+    margin-left: 20px;
 }
 /* 登录页面结束 */
 

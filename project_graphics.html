@@ -15,6 +15,7 @@
     <!--end-->
     <script src="static/platform/js/jquery-1.10.1.min.js"></script>
     <script src="static/platform/js/bootstrap.min.js"></script>
+      <script src="static/platform/js/bootstrap-paginator.js"></script>
 
     <title>项目库</title>
   </head>
@@ -24,7 +25,7 @@
             <div class="project-model-tree">
                 <div class="project-model-tree-head">
                   <span class="project-model-tree-head-span project-model-tree-head-span-click">项目树</span>
-                  <span class="project-model-tree-head-span">工程度</span>
+                  <span class="project-model-tree-head-span">工程图</span>
                 </div>
                 <div class="project-model-tree-content">
                   <div class="project-model-tree-content-head">
@@ -157,6 +158,30 @@
               <span>打印构件</span>
             </div>
           </div>
+            <div class="project-list-search">
+            <span>
+              <label>构件图号：</label><input type="text" />
+            </span>
+                <span>
+                <label>构件类型：</label>
+                <select class="select-default">
+                  <option value="0" selected>楼板</option>
+                  <option value="1">墙板</option>
+                  <option value="2">叠合板</option>
+                </select>
+              </span>
+                <span>
+                  <label>构件状态：</label>
+                  <select class="select-default">
+                    <option value="0" selected>正在生产</option>
+                    <option value="1">生产完成</option>
+                    <option value="2">未生产</option>
+                  </select>
+                </span>
+                <span>
+                    <input type="button" class="btn-default" value="搜索">
+                  </span>
+            </div>
           <div class="project-graphics-middle-content">
             <table class="project-graphics-middle-table">
               <thead>
@@ -341,10 +366,10 @@
                       </tr>
                       <tr>
                           <td>
-                            汇总
+                            24F
                           </td>
                           <td>
-                              214
+                              18
                           </td>
                           <td>
                               36
@@ -400,10 +425,10 @@
                         </tr>
                         <tr>
                             <td>
-                              汇总
+                              23F
                             </td>
                             <td>
-                                214
+                                19
                             </td>
                             <td>
                                 36
@@ -459,10 +484,10 @@
                           </tr>
                           <tr>
                               <td>
-                                汇总
+                                22F
                               </td>
                               <td>
-                                  214
+                                  6
                               </td>
                               <td>
                                   36
@@ -518,10 +543,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                  汇总
+                                  21F
                                 </td>
                                 <td>
-                                    214
+                                    19
                                 </td>
                                 <td>
                                     36
@@ -577,10 +602,10 @@
                               </tr>
                               <tr>
                                   <td>
-                                    汇总
+                                    20F
                                   </td>
                                   <td>
-                                      214
+                                      21
                                   </td>
                                   <td>
                                       36
@@ -636,10 +661,10 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                      汇总
+                                        19F
                                     </td>
                                     <td>
-                                        214
+                                        21
                                     </td>
                                     <td>
                                         36
@@ -695,10 +720,10 @@
                                   </tr>
                                   <tr>
                                       <td>
-                                        汇总
+                                          18F
                                       </td>
                                       <td>
-                                          214
+                                          21
                                       </td>
                                       <td>
                                           36
@@ -754,10 +779,10 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                          汇总
+                                            17F
                                         </td>
                                         <td>
-                                            214
+                                            21
                                         </td>
                                         <td>
                                             36
@@ -813,10 +838,10 @@
                                       </tr>
                                       <tr>
                                           <td>
-                                            汇总
+                                              16F
                                           </td>
                                           <td>
-                                              214
+                                              21
                                           </td>
                                           <td>
                                               36
@@ -872,10 +897,10 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                              汇总
+                                                15F
                                             </td>
                                             <td>
-                                                214
+                                                21
                                             </td>
                                             <td>
                                                 36
@@ -931,10 +956,10 @@
                                           </tr>
                                           <tr>
                                               <td>
-                                                汇总
+                                                  14F
                                               </td>
                                               <td>
-                                                  214
+                                                  12
                                               </td>
                                               <td>
                                                   36
@@ -990,10 +1015,10 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                  汇总
+                                                    13F
                                                 </td>
                                                 <td>
-                                                    214
+                                                    13
                                                 </td>
                                                 <td>
                                                     36
@@ -1049,10 +1074,10 @@
                                               </tr>
                                               <tr>
                                                   <td>
-                                                    汇总
+                                                      12F
                                                   </td>
                                                   <td>
-                                                      214
+                                                      8
                                                   </td>
                                                   <td>
                                                       36
@@ -1108,10 +1133,10 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                      汇总
+                                                        11F
                                                     </td>
                                                     <td>
-                                                        214
+                                                        4
                                                     </td>
                                                     <td>
                                                         36
@@ -1165,599 +1190,12 @@
                                                         25
                                                     </td>
                                                   </tr>
-                                                  <tr>
-                                                      <td>
-                                                        汇总
-                                                      </td>
-                                                      <td>
-                                                          214
-                                                      </td>
-                                                      <td>
-                                                          36
-                                                      </td>
-                                                      <td>
-                                                          36
-                                                      </td>
-                                                      <td>
-                                                          61
-                                                      </td>
-                                                      <td>
-                                                          0
-                                                      </td>
-                                                      <td>
-                                                          102
-                                                      </td>
-                                                      <td>
-                                                          0
-                                                      </td>
-                                                      <td>
-                                                          0
-                                                      </td>
-                                                      <td>
-                                                          0
-                                                      </td>
-                                                      <td>
-                                                          6
-                                                      </td>
-                                                      <td>
-                                                          5
-                                                      </td>
-                                                      <td>
-                                                          0
-                                                      </td>
-                                                      <td>
-                                                          0
-                                                      </td>
-                                                      <td>
-                                                          7
-                                                      </td>
-                                                      <td>
-                                                          7
-                                                      </td>
-                                                      <td>
-                                                          19
-                                                      </td>
-                                                      <td>
-                                                          24
-                                                      </td>
-                                                      <td>
-                                                          25
-                                                      </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                          汇总
-                                                        </td>
-                                                        <td>
-                                                            214
-                                                        </td>
-                                                        <td>
-                                                            36
-                                                        </td>
-                                                        <td>
-                                                            36
-                                                        </td>
-                                                        <td>
-                                                            61
-                                                        </td>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                        <td>
-                                                            102
-                                                        </td>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                        <td>
-                                                            6
-                                                        </td>
-                                                        <td>
-                                                            5
-                                                        </td>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                        <td>
-                                                            0
-                                                        </td>
-                                                        <td>
-                                                            7
-                                                        </td>
-                                                        <td>
-                                                            7
-                                                        </td>
-                                                        <td>
-                                                            19
-                                                        </td>
-                                                        <td>
-                                                            24
-                                                        </td>
-                                                        <td>
-                                                            25
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                          <td>
-                                                            汇总
-                                                          </td>
-                                                          <td>
-                                                              214
-                                                          </td>
-                                                          <td>
-                                                              36
-                                                          </td>
-                                                          <td>
-                                                              36
-                                                          </td>
-                                                          <td>
-                                                              61
-                                                          </td>
-                                                          <td>
-                                                              0
-                                                          </td>
-                                                          <td>
-                                                              102
-                                                          </td>
-                                                          <td>
-                                                              0
-                                                          </td>
-                                                          <td>
-                                                              0
-                                                          </td>
-                                                          <td>
-                                                              0
-                                                          </td>
-                                                          <td>
-                                                              6
-                                                          </td>
-                                                          <td>
-                                                              5
-                                                          </td>
-                                                          <td>
-                                                              0
-                                                          </td>
-                                                          <td>
-                                                              0
-                                                          </td>
-                                                          <td>
-                                                              7
-                                                          </td>
-                                                          <td>
-                                                              7
-                                                          </td>
-                                                          <td>
-                                                              19
-                                                          </td>
-                                                          <td>
-                                                              24
-                                                          </td>
-                                                          <td>
-                                                              25
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                              汇总
-                                                            </td>
-                                                            <td>
-                                                                214
-                                                            </td>
-                                                            <td>
-                                                                36
-                                                            </td>
-                                                            <td>
-                                                                36
-                                                            </td>
-                                                            <td>
-                                                                61
-                                                            </td>
-                                                            <td>
-                                                                0
-                                                            </td>
-                                                            <td>
-                                                                102
-                                                            </td>
-                                                            <td>
-                                                                0
-                                                            </td>
-                                                            <td>
-                                                                0
-                                                            </td>
-                                                            <td>
-                                                                0
-                                                            </td>
-                                                            <td>
-                                                                6
-                                                            </td>
-                                                            <td>
-                                                                5
-                                                            </td>
-                                                            <td>
-                                                                0
-                                                            </td>
-                                                            <td>
-                                                                0
-                                                            </td>
-                                                            <td>
-                                                                7
-                                                            </td>
-                                                            <td>
-                                                                7
-                                                            </td>
-                                                            <td>
-                                                                19
-                                                            </td>
-                                                            <td>
-                                                                24
-                                                            </td>
-                                                            <td>
-                                                                25
-                                                            </td>
-                                                          </tr>
-                                                          <tr>
-                                                              <td>
-                                                                汇总
-                                                              </td>
-                                                              <td>
-                                                                  214
-                                                              </td>
-                                                              <td>
-                                                                  36
-                                                              </td>
-                                                              <td>
-                                                                  36
-                                                              </td>
-                                                              <td>
-                                                                  61
-                                                              </td>
-                                                              <td>
-                                                                  0
-                                                              </td>
-                                                              <td>
-                                                                  102
-                                                              </td>
-                                                              <td>
-                                                                  0
-                                                              </td>
-                                                              <td>
-                                                                  0
-                                                              </td>
-                                                              <td>
-                                                                  0
-                                                              </td>
-                                                              <td>
-                                                                  6
-                                                              </td>
-                                                              <td>
-                                                                  5
-                                                              </td>
-                                                              <td>
-                                                                  0
-                                                              </td>
-                                                              <td>
-                                                                  0
-                                                              </td>
-                                                              <td>
-                                                                  7
-                                                              </td>
-                                                              <td>
-                                                                  7
-                                                              </td>
-                                                              <td>
-                                                                  19
-                                                              </td>
-                                                              <td>
-                                                                  24
-                                                              </td>
-                                                              <td>
-                                                                  25
-                                                              </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                  汇总
-                                                                </td>
-                                                                <td>
-                                                                    214
-                                                                </td>
-                                                                <td>
-                                                                    36
-                                                                </td>
-                                                                <td>
-                                                                    36
-                                                                </td>
-                                                                <td>
-                                                                    61
-                                                                </td>
-                                                                <td>
-                                                                    0
-                                                                </td>
-                                                                <td>
-                                                                    102
-                                                                </td>
-                                                                <td>
-                                                                    0
-                                                                </td>
-                                                                <td>
-                                                                    0
-                                                                </td>
-                                                                <td>
-                                                                    0
-                                                                </td>
-                                                                <td>
-                                                                    6
-                                                                </td>
-                                                                <td>
-                                                                    5
-                                                                </td>
-                                                                <td>
-                                                                    0
-                                                                </td>
-                                                                <td>
-                                                                    0
-                                                                </td>
-                                                                <td>
-                                                                    7
-                                                                </td>
-                                                                <td>
-                                                                    7
-                                                                </td>
-                                                                <td>
-                                                                    19
-                                                                </td>
-                                                                <td>
-                                                                    24
-                                                                </td>
-                                                                <td>
-                                                                    25
-                                                                </td>
-                                                              </tr>
-                                                              <tr>
-                                                                  <td>
-                                                                    汇总
-                                                                  </td>
-                                                                  <td>
-                                                                      214
-                                                                  </td>
-                                                                  <td>
-                                                                      36
-                                                                  </td>
-                                                                  <td>
-                                                                      36
-                                                                  </td>
-                                                                  <td>
-                                                                      61
-                                                                  </td>
-                                                                  <td>
-                                                                      0
-                                                                  </td>
-                                                                  <td>
-                                                                      102
-                                                                  </td>
-                                                                  <td>
-                                                                      0
-                                                                  </td>
-                                                                  <td>
-                                                                      0
-                                                                  </td>
-                                                                  <td>
-                                                                      0
-                                                                  </td>
-                                                                  <td>
-                                                                      6
-                                                                  </td>
-                                                                  <td>
-                                                                      5
-                                                                  </td>
-                                                                  <td>
-                                                                      0
-                                                                  </td>
-                                                                  <td>
-                                                                      0
-                                                                  </td>
-                                                                  <td>
-                                                                      7
-                                                                  </td>
-                                                                  <td>
-                                                                      7
-                                                                  </td>
-                                                                  <td>
-                                                                      19
-                                                                  </td>
-                                                                  <td>
-                                                                      24
-                                                                  </td>
-                                                                  <td>
-                                                                      25
-                                                                  </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                      汇总
-                                                                    </td>
-                                                                    <td>
-                                                                        214
-                                                                    </td>
-                                                                    <td>
-                                                                        36
-                                                                    </td>
-                                                                    <td>
-                                                                        36
-                                                                    </td>
-                                                                    <td>
-                                                                        61
-                                                                    </td>
-                                                                    <td>
-                                                                        0
-                                                                    </td>
-                                                                    <td>
-                                                                        102
-                                                                    </td>
-                                                                    <td>
-                                                                        0
-                                                                    </td>
-                                                                    <td>
-                                                                        0
-                                                                    </td>
-                                                                    <td>
-                                                                        0
-                                                                    </td>
-                                                                    <td>
-                                                                        6
-                                                                    </td>
-                                                                    <td>
-                                                                        5
-                                                                    </td>
-                                                                    <td>
-                                                                        0
-                                                                    </td>
-                                                                    <td>
-                                                                        0
-                                                                    </td>
-                                                                    <td>
-                                                                        7
-                                                                    </td>
-                                                                    <td>
-                                                                        7
-                                                                    </td>
-                                                                    <td>
-                                                                        19
-                                                                    </td>
-                                                                    <td>
-                                                                        24
-                                                                    </td>
-                                                                    <td>
-                                                                        25
-                                                                    </td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <td>
-                                                                        汇总
-                                                                      </td>
-                                                                      <td>
-                                                                          214
-                                                                      </td>
-                                                                      <td>
-                                                                          36
-                                                                      </td>
-                                                                      <td>
-                                                                          36
-                                                                      </td>
-                                                                      <td>
-                                                                          61
-                                                                      </td>
-                                                                      <td>
-                                                                          0
-                                                                      </td>
-                                                                      <td>
-                                                                          102
-                                                                      </td>
-                                                                      <td>
-                                                                          0
-                                                                      </td>
-                                                                      <td>
-                                                                          0
-                                                                      </td>
-                                                                      <td>
-                                                                          0
-                                                                      </td>
-                                                                      <td>
-                                                                          6
-                                                                      </td>
-                                                                      <td>
-                                                                          5
-                                                                      </td>
-                                                                      <td>
-                                                                          0
-                                                                      </td>
-                                                                      <td>
-                                                                          0
-                                                                      </td>
-                                                                      <td>
-                                                                          7
-                                                                      </td>
-                                                                      <td>
-                                                                          7
-                                                                      </td>
-                                                                      <td>
-                                                                          19
-                                                                      </td>
-                                                                      <td>
-                                                                          24
-                                                                      </td>
-                                                                      <td>
-                                                                          25
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                          汇总
-                                                                        </td>
-                                                                        <td>
-                                                                            214
-                                                                        </td>
-                                                                        <td>
-                                                                            36
-                                                                        </td>
-                                                                        <td>
-                                                                            36
-                                                                        </td>
-                                                                        <td>
-                                                                            61
-                                                                        </td>
-                                                                        <td>
-                                                                            0
-                                                                        </td>
-                                                                        <td>
-                                                                            102
-                                                                        </td>
-                                                                        <td>
-                                                                            0
-                                                                        </td>
-                                                                        <td>
-                                                                            0
-                                                                        </td>
-                                                                        <td>
-                                                                            0
-                                                                        </td>
-                                                                        <td>
-                                                                            6
-                                                                        </td>
-                                                                        <td>
-                                                                            5
-                                                                        </td>
-                                                                        <td>
-                                                                            0
-                                                                        </td>
-                                                                        <td>
-                                                                            0
-                                                                        </td>
-                                                                        <td>
-                                                                            7
-                                                                        </td>
-                                                                        <td>
-                                                                            7
-                                                                        </td>
-                                                                        <td>
-                                                                            19
-                                                                        </td>
-                                                                        <td>
-                                                                            24
-                                                                        </td>
-                                                                        <td>
-                                                                            25
-                                                                        </td>
-                                                                      </tr>
               </tbody>
             </table>
           </div>
+            <div class="project-file-page">
+                <ul id="pageLimit"></ul>
+            </div>
         </div>
       </div>
     <script>
@@ -1786,6 +1224,25 @@
                 img.addClass("project-model-img-rotating")
           }
     }
+
+    $('#pageLimit').bootstrapPaginator({
+        currentPage: 1,//当前的请求页面。
+        totalPages: 20,//一共多少页。
+        size:"normal",//应该是页眉的大小。
+        bootstrapMajorVersion: 3,//bootstrap的版本要求。
+        alignment:"right",
+        numberOfPages:5,//一页列出多少数据。
+        itemTexts: function (type, page, current) {//如下的代码是将页眉显示的中文显示我们自定义的中文。
+            switch (type) {
+                case "first": return "首页";
+                case "prev": return "上一页";
+                case "next": return "下一页";
+                case "last": return "末页";
+                case "page": return page;
+            }
+        }
+    });
+
     </script>
 
   </body>
